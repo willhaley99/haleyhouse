@@ -102,16 +102,20 @@ Open http://localhost:3000 to view the site.
 - This project is ready to deploy on Vercel
 - Add the same environment variables in the Vercel dashboard before deployment
 - Set `AUTHORIZED_EMAILS` to the exact list of approved member email addresses
-- Set the Google OAuth redirect URI to your production domain under the Auth settings
+- Set `NEXTAUTH_URL` to `https://haleyhouseholdings.com` in Vercel's Production
+  environment and redeploy after changing it.
+- The canonical production URL is `https://haleyhouseholdings.com`. Both it
+  and `https://www.haleyhouseholdings.com` are configured in Vercel and serve
+  the site.
+- In Google Auth Platform, authorize
+  `https://haleyhouseholdings.com` as a JavaScript origin and
+  `https://haleyhouseholdings.com/api/auth/callback/google` as a redirect URI.
+  The legacy Vercel origin and callback are retained for fallback.
 - The Google OAuth app is published in production. The application still
   independently checks `AUTHORIZED_EMAILS` before allowing a member to sign in.
-- Google Auth Platform branding points to `https://haleyhouse.vercel.app` and
-  `https://haleyhouse.vercel.app/privacy`.
-- The current production domain is `https://haleyhouse.vercel.app`.
-  `haleyhouseholdings.com` and `www.haleyhouseholdings.com` have been added to
-  the Vercel project; their GoDaddy DNS records still need to point to Vercel
-  before they can serve the site. Use the exact A and CNAME values shown on
-  the domain cards in Vercel, and leave the registrar's nameservers unchanged.
+- Google Auth Platform branding uses
+  `https://haleyhouseholdings.com` and
+  `https://haleyhouseholdings.com/privacy`.
 - The contact form opens a prefilled email in the visitor's email app; the
   visitor must send it. The site does not receive or store contact inquiries.
 
