@@ -9,38 +9,21 @@ export const metadata: Metadata = {
 
 const sections = [
   {
-    title: "Information we handle",
+    title: "Information we collect",
     paragraphs: [
-      "When you enter an email address on the member sign-in page, we check it against the member access list before starting Google sign-in. The address is used for that check and is not saved to a separate application database.",
-      "If you continue with Google, Google provides your name, email address, and profile image. We require Google to verify the email address. Your name and email are used to identify your member account, and your profile image may be shown on your profile page.",
-      "The member portal uses essential browser cookies to maintain your sign-in session and protect the authentication flow. The website does not currently include advertising trackers or analytics tools.",
+      "We collect information you provide when using the member sign-in or contacting us. Google sign-in may provide your name, email address, and profile image. The site also uses essential cookies to maintain your sign-in session.",
     ],
   },
   {
-    title: "How we use information",
+    title: "How we use and share information",
     paragraphs: [
-      "We use this information to verify member access, authenticate you, display your account profile, and protect the member portal from unauthorized access.",
-      "The member access list is maintained in the website's deployment configuration. The application does not currently use a database to store member profiles.",
+      "We use information to operate the website, manage member access, and respond to inquiries. Service providers that support sign-in and website hosting may process information as needed to provide their services. We do not sell personal information.",
     ],
   },
   {
-    title: "Service providers",
+    title: "Your choices and this policy",
     paragraphs: [
-      "Google provides the sign-in service and shares the profile information described above when you authenticate. Vercel hosts the website and processes the technical information needed to deliver and secure it. These providers handle information under their own privacy terms.",
-      "We do not sell personal information. We do not use information from the sign-in flow for advertising.",
-    ],
-  },
-  {
-    title: "Your choices and requests",
-    paragraphs: [
-      "You can leave the sign-in flow before completing Google authentication, or sign out of the member portal to end your session. You can also manage Haley House Holdings' access to your Google account in your Google Account settings.",
-      "To ask about, correct, or request removal of information associated with member access, contact us at the address below. Removing an address from the member access list prevents future sign-in but does not control records held independently by Google or Vercel.",
-    ],
-  },
-  {
-    title: "Changes and contact",
-    paragraphs: [
-      "We may update this policy when the website or its data practices change. The date at the top of this page indicates when it was last revised.",
+      "You can sign out to end your member session and manage Google account access in your Google settings. Contact us with privacy questions or requests. We may update this policy as our practices change.",
     ],
   },
 ];
