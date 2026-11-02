@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { ArrowRight, UserRound } from "lucide-react";
 import SiteNavigation from "@/app/components/site-navigation";
+import SiteFooter from "@/app/components/site-footer";
 
 const familyMembers = ["01", "02", "03", "04", "05"];
 
 export default function AboutPage() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <SiteNavigation currentPath="/about" />
-      <main className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+      <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-16 sm:py-20">
         <section className="max-w-4xl border-b border-stone-300 pb-12 sm:pb-16">
           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">About us</p>
           <h1 className="mt-5 max-w-3xl font-serif text-4xl leading-[1.05] tracking-tight text-stone-950 sm:text-6xl">
@@ -87,6 +88,7 @@ export default function AboutPage() {
           </Link>
         </section>
       </main>
-    </>
+      <SiteFooter />
+    </div>
   );
 }

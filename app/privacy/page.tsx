@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import SiteNavigation from "@/app/components/site-navigation";
+import SiteFooter from "@/app/components/site-footer";
 
 export const metadata: Metadata = {
   title: "Privacy policy",
@@ -48,10 +48,10 @@ const sections = [
 
 export default function PrivacyPage() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <SiteNavigation />
-      <main className="mx-auto max-w-4xl px-6 py-16">
-        <article className="border border-stone-200 bg-[#fcfdfd] p-7 sm:p-10 md:p-12">
+      <main className="mx-auto w-full max-w-4xl flex-1 px-6 py-16 sm:py-20">
+        <article className="border-b border-stone-300 pb-12 sm:pb-16">
           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
             Haley House Holdings
           </p>
@@ -91,13 +91,9 @@ export default function PrivacyPage() {
             </section>
           </div>
 
-          <p className="mt-10 border-t border-stone-200 pt-6 text-sm text-stone-500">
-            <Link href="/" className="font-medium text-stone-800 underline underline-offset-4">
-              Return to Haley House Holdings
-            </Link>
-          </p>
         </article>
       </main>
-    </>
+      <SiteFooter />
+    </div>
   );
 }

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import PhotoCredit from "@/app/components/photo-credit";
+import SiteFooter from "@/app/components/site-footer";
 
 const verticals = [
   {
@@ -42,9 +43,9 @@ const considerations = [
 
 export default function PortfolioPage() {
   return (
-    <>
+    <div className="flex min-h-screen flex-col">
       <SiteNavigation currentPath="/portfolio" />
-      <main className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+      <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-16 sm:py-20">
         <section className="max-w-4xl border-b border-stone-300 pb-12 sm:pb-16">
           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">Portfolio focus</p>
           <h1 className="mt-5 max-w-3xl font-serif text-4xl leading-[1.05] tracking-tight text-stone-950 sm:text-6xl">
@@ -149,6 +150,7 @@ export default function PortfolioPage() {
           </Link>
         </section>
       </main>
-    </>
+      <SiteFooter />
+    </div>
   );
 }

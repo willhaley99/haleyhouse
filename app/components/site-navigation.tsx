@@ -48,6 +48,7 @@ export default function SiteNavigation({ currentPath = "/" }: { currentPath?: st
         <div className="hidden md:block">
           <Link
             href="/contact"
+            aria-current={currentPath === "/contact" ? "page" : undefined}
             className="inline-flex items-center gap-2 rounded-sm bg-stone-900 px-5 py-3 text-xs font-semibold tracking-wide text-white transition hover:bg-amber-900"
           >
             Get in touch <span aria-hidden="true">↗</span>
@@ -67,13 +68,17 @@ export default function SiteNavigation({ currentPath = "/" }: { currentPath?: st
               <Link
                 key={link.href}
                 href={link.href}
-                className="block rounded-xl px-4 py-3 text-sm font-medium text-stone-700 transition hover:bg-stone-100 hover:text-stone-950"
+                aria-current={currentPath === link.href ? "page" : undefined}
+                className={`block rounded-xl px-4 py-3 text-sm font-medium transition hover:bg-stone-100 hover:text-stone-950 ${
+                  currentPath === link.href ? "bg-stone-100 text-stone-950" : "text-stone-700"
+                }`}
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/contact"
+              aria-current={currentPath === "/contact" ? "page" : undefined}
               className="mt-2 flex items-center justify-between rounded-sm bg-stone-950 px-4 py-3 text-sm font-semibold text-white transition hover:bg-amber-900"
             >
               Get in touch <span aria-hidden="true">↗</span>
