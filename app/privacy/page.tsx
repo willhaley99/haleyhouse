@@ -14,7 +14,6 @@ const sections = [
       "When you enter an email address on the member sign-in page, we check it against the member access list before starting Google sign-in. The address is used for that check and is not saved to a separate application database.",
       "If you continue with Google, Google provides your name, email address, and profile image. We require Google to verify the email address. Your name and email are used to identify your member account, and your profile image may be shown on your profile page.",
       "The member portal uses essential browser cookies to maintain your sign-in session and protect the authentication flow. The website does not currently include advertising trackers or analytics tools.",
-      "The contact form opens a prefilled email in your own email app. If you send it, the information in that email is delivered to our published contact address through your email provider; the website itself does not receive or store the inquiry.",
     ],
   },
   {
