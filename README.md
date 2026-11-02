@@ -86,6 +86,7 @@ Open http://localhost:3000 to view the site.
 - `app/about/page.tsx` — about page
 - `app/portfolio/page.tsx` — portfolio strategy page
 - `app/dashboard/page.tsx` — protected member dashboard
+- `app/profile/page.tsx` — signed-in member profile and account navigation
 - `app/signin/` — email-first member sign-in
 - `app/contact/page.tsx` — contact form page
 - `auth.ts` — NextAuth configuration

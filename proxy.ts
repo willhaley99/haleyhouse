@@ -11,5 +11,5 @@ const proxy = withAuth({
 export default proxy;
 
 export const config = {
-  matcher: ["/dashboard/:path*"],
+  matcher: ["/dashboard/:path*", "/profile/:path*"],
 };
