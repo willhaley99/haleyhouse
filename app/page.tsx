@@ -89,7 +89,7 @@ export default function HomePage() {
                 >
                   Capital with
                   <br />
-                  <span className="font-normal italic text-[#c6f36b]">a longer view.</span>
+                  <span className="font-normal italic text-[#c8b994]">a longer view.</span>
                 </h1>
                 <p className="mx-auto mt-7 max-w-3xl text-base leading-8 text-white/90 sm:text-lg sm:leading-9">
                   Based in Louisville, we bring family resources together to pursue promising opportunities—and
@@ -98,7 +98,7 @@ export default function HomePage() {
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                   <Link
                     href="/portfolio"
-                    className="group inline-flex items-center gap-3 rounded-full bg-[#c6f36b] px-6 py-3.5 text-sm font-semibold text-[#101c2c] shadow-[0_8px_24px_rgba(16,28,44,0.2)] transition hover:bg-[#d7f58c]"
+                    className="group inline-flex items-center gap-3 rounded-full bg-[#b49b6a] px-6 py-3.5 text-sm font-semibold text-[#101c2c] shadow-[0_8px_24px_rgba(16,28,44,0.2)] transition hover:bg-[#c8b994]"
                   >
                     Explore our focus
                     <ArrowRight aria-hidden="true" size={16} className="transition-transform group-hover:translate-x-1" />
@@ -114,7 +114,7 @@ export default function HomePage() {
                   href="#approach"
                   className="mx-auto mt-12 flex w-fit items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-white/75 transition hover:text-white"
                 >
-                  <span className="flex size-8 items-center justify-center rounded-full border border-[#c6f36b]/70 text-[#c6f36b]">
+                  <span className="flex size-8 items-center justify-center rounded-full border border-[#c8b994]/80 text-[#c8b994]">
                     <ArrowDown aria-hidden="true" size={13} />
                   </span>
                   Discover our approach

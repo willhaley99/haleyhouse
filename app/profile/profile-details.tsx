@@ -81,7 +81,7 @@ export default function ProfileDetails() {
       <section
         aria-label="Google account profile"
         aria-live="polite"
-        className="mt-8 border border-stone-200 bg-[#fcfdfd] p-7 sm:p-9"
+        className="mt-8 rounded-2xl border border-stone-200 bg-[#fcfdfd] p-7 sm:p-9"
       >
         <p className="text-stone-600">Loading your account details…</p>
       </section>
@@ -92,7 +92,7 @@ export default function ProfileDetails() {
     return (
       <section
         aria-label="Google account profile"
-        className="mt-8 border border-stone-200 bg-[#fcfdfd] p-7 sm:p-9"
+        className="mt-8 rounded-2xl border border-stone-200 bg-[#fcfdfd] p-7 sm:p-9"
       >
         <p role="alert" className="text-stone-700">
           We couldn’t load your account details.
@@ -100,7 +100,7 @@ export default function ProfileDetails() {
         <button
           type="button"
           onClick={() => void retryLoadingSession()}
-          className="mt-4 rounded-sm bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-amber-900"
+          className="mt-4 rounded-full bg-[#b49b6a] px-5 py-2.5 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994]"
         >
           Try again
         </button>
@@ -119,7 +119,7 @@ export default function ProfileDetails() {
   return (
     <section
       aria-label="Google account profile"
-      className="mt-8 border border-stone-200 bg-[#fcfdfd] p-7 sm:p-9"
+      className="mt-8 rounded-2xl border border-stone-200 bg-[#fcfdfd] p-7 sm:p-9"
     >
       <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
         {session.user.image ? (
@@ -162,7 +162,7 @@ export default function ProfileDetails() {
         </div>
         <div>
           <dt className="text-sm text-stone-500">Member access</dt>
-          <dd className="mt-1 font-medium text-emerald-800">Approved</dd>
+          <dd className="mt-1 font-medium text-amber-900">Approved</dd>
         </div>
       </dl>
     </section>

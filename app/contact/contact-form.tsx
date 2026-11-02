@@ -32,7 +32,7 @@ export default function ContactForm() {
             autoComplete="name"
             required
             maxLength={120}
-            className="rounded-sm border border-stone-300 bg-white px-4 py-3 outline-none transition focus:border-amber-900 focus:ring-2 focus:ring-amber-900/15"
+            className="rounded-xl border border-stone-300 bg-white px-4 py-3 outline-none transition focus:border-amber-900 focus:ring-2 focus:ring-amber-900/15"
             placeholder="Your name"
           />
         </label>
@@ -44,7 +44,7 @@ export default function ContactForm() {
             autoComplete="email"
             required
             maxLength={254}
-            className="rounded-sm border border-stone-300 bg-white px-4 py-3 outline-none transition focus:border-amber-900 focus:ring-2 focus:ring-amber-900/15"
+            className="rounded-xl border border-stone-300 bg-white px-4 py-3 outline-none transition focus:border-amber-900 focus:ring-2 focus:ring-amber-900/15"
             placeholder="you@example.com"
           />
         </label>
@@ -56,7 +56,7 @@ export default function ContactForm() {
           rows={6}
           required
           maxLength={5000}
-          className="rounded-sm border border-stone-300 bg-white px-4 py-3 outline-none transition focus:border-amber-900 focus:ring-2 focus:ring-amber-900/15"
+          className="rounded-xl border border-stone-300 bg-white px-4 py-3 outline-none transition focus:border-amber-900 focus:ring-2 focus:ring-amber-900/15"
           placeholder="Tell us about the opportunity or partnership you have in mind."
         />
       </label>
@@ -67,7 +67,7 @@ export default function ContactForm() {
       )}
       <button
         type="submit"
-        className="w-fit rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-900"
+        className="w-fit rounded-full bg-[#b49b6a] px-6 py-3.5 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994]"
       >
         Continue to email
       </button>

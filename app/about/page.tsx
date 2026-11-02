@@ -10,12 +10,14 @@ export default function AboutPage() {
     <div className="flex min-h-screen flex-col">
       <SiteNavigation currentPath="/about" />
       <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-16 sm:py-20">
-        <section className="max-w-4xl border-b border-stone-300 pb-12 sm:pb-16">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">About us</p>
-          <h1 className="mt-5 max-w-3xl font-serif text-4xl leading-[1.05] tracking-tight text-stone-950 sm:text-6xl">
+        <section className="mx-auto max-w-5xl border-b border-stone-300 pb-12 text-center sm:pb-16">
+          <p className="flex items-center justify-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
+            <span aria-hidden="true" className="h-px w-8 bg-amber-800/50" />About us<span aria-hidden="true" className="h-px w-8 bg-amber-800/50" />
+          </p>
+          <h1 className="mx-auto mt-5 max-w-4xl font-serif text-5xl leading-[0.98] tracking-[-0.04em] text-stone-950 sm:text-7xl">
             Family resources, invested together.
           </h1>
-          <p className="mt-7 max-w-3xl text-base leading-8 text-stone-600 sm:text-lg">
+          <p className="mx-auto mt-7 max-w-3xl text-base leading-8 text-stone-600 sm:text-lg">
             Based in Louisville, Kentucky, Haley House Holdings began with a straightforward idea: bring family
             resources together to pursue opportunities we believe may succeed, and share in the success we work
             toward together.
@@ -82,7 +84,7 @@ export default function AboutPage() {
           </div>
           <Link
             href="/portfolio"
-            className="inline-flex w-fit shrink-0 items-center gap-2 rounded-sm bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-amber-900"
+            className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full bg-[#b49b6a] px-5 py-3 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994]"
           >
             What we invest in <ArrowRight aria-hidden="true" size={16} />
           </Link>

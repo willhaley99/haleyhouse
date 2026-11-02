@@ -52,10 +52,10 @@ export default function PrivacyPage() {
       <SiteNavigation />
       <main className="mx-auto w-full max-w-4xl flex-1 px-6 py-16 sm:py-20">
         <article className="border-b border-stone-300 pb-12 sm:pb-16">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
-            Haley House Holdings
+          <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
+            <span aria-hidden="true" className="h-px w-8 bg-amber-800/50" />Haley House Holdings
           </p>
-          <h1 className="mt-4 font-serif text-4xl tracking-tight text-stone-950 md:text-6xl">
+          <h1 className="mt-5 font-serif text-5xl leading-[0.98] tracking-[-0.04em] text-stone-950 md:text-7xl">
             Privacy policy
           </h1>
           <p className="mt-4 text-sm text-stone-500">Last updated November 1, 2026</p>

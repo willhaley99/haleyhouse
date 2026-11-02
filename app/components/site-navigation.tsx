@@ -49,21 +49,21 @@ export default function SiteNavigation({ currentPath = "/" }: { currentPath?: st
           <Link
             href="/contact"
             aria-current={currentPath === "/contact" ? "page" : undefined}
-            className="inline-flex items-center gap-2 rounded-sm bg-stone-900 px-5 py-3 text-xs font-semibold tracking-wide text-white transition hover:bg-amber-900"
+            className="inline-flex items-center gap-2 rounded-full bg-[#b49b6a] px-5 py-3 text-xs font-semibold tracking-wide text-[#101c2c] transition hover:bg-[#c8b994]"
           >
             Get in touch <span aria-hidden="true">↗</span>
           </Link>
         </div>
 
         <details className="group relative md:hidden">
-          <summary className="flex cursor-pointer list-none items-center gap-2 rounded-sm border border-stone-300 px-4 py-2.5 text-sm font-semibold text-stone-800 transition hover:border-stone-500 [&::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer list-none items-center gap-2 rounded-full border border-stone-300 px-4 py-2.5 text-sm font-semibold text-stone-800 transition hover:border-stone-500 [&::-webkit-details-marker]:hidden">
             <span className="menu-icon" aria-hidden="true">
               <span />
               <span />
             </span>
             Menu
           </summary>
-          <div className="absolute right-0 top-[calc(100%+0.75rem)] z-20 w-[min(20rem,calc(100vw-2.5rem))] rounded-md border border-stone-200 bg-[#fcfdfd] p-3 shadow-[0_16px_40px_rgba(28,42,61,0.12)]">
+          <div className="absolute right-0 top-[calc(100%+0.75rem)] z-20 w-[min(20rem,calc(100vw-2.5rem))] rounded-2xl border border-stone-200 bg-[#fcfdfd] p-3 shadow-[0_16px_40px_rgba(28,42,61,0.12)]">
             {links.map((link) => (
               <Link
                 key={link.href}
@@ -79,7 +79,7 @@ export default function SiteNavigation({ currentPath = "/" }: { currentPath?: st
             <Link
               href="/contact"
               aria-current={currentPath === "/contact" ? "page" : undefined}
-              className="mt-2 flex items-center justify-between rounded-sm bg-stone-950 px-4 py-3 text-sm font-semibold text-white transition hover:bg-amber-900"
+              className="mt-2 flex items-center justify-between rounded-full bg-[#b49b6a] px-4 py-3 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994]"
             >
               Get in touch <span aria-hidden="true">↗</span>
             </Link>

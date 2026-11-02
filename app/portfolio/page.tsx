@@ -53,13 +53,15 @@ export default function PortfolioPage() {
               sizes="(max-width: 768px) 100vw, 1280px"
               className="object-cover object-center saturate-[.85] sepia-[.08]"
             />
-            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[#101c2c]/90 via-[#101c2c]/45 to-transparent" />
-            <div className="relative flex min-h-[430px] max-w-3xl flex-col justify-center px-6 py-16 sm:min-h-[520px] sm:px-12 lg:px-16">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-200">Portfolio focus</p>
-              <h1 id="portfolio-title" className="mt-5 max-w-2xl font-serif text-5xl leading-[0.98] tracking-tight text-white sm:text-7xl">
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-[#101c2c]/40 via-[#101c2c]/45 to-[#101c2c]/75" />
+            <div className="relative mx-auto flex min-h-[430px] max-w-4xl flex-col items-center justify-center px-6 py-16 text-center sm:min-h-[520px] sm:px-12">
+              <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#c8b994]">
+                <span aria-hidden="true" className="h-px w-8 bg-[#c8b994]/70" />Portfolio focus<span aria-hidden="true" className="h-px w-8 bg-[#c8b994]/70" />
+              </p>
+              <h1 id="portfolio-title" className="mt-5 max-w-3xl font-serif text-5xl leading-[0.98] tracking-[-0.04em] text-white sm:text-7xl">
                 A long view.
               </h1>
-              <p className="mt-6 max-w-lg text-base leading-7 text-white/85 sm:text-lg">
+              <p className="mt-6 max-w-2xl text-base leading-7 text-white/90 sm:text-lg">
                 Businesses. Real assets. Thoughtful partnerships.
               </p>
             </div>
@@ -117,7 +119,7 @@ export default function PortfolioPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex w-fit shrink-0 items-center gap-2 rounded-sm bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-amber-900"
+            className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full bg-[#b49b6a] px-5 py-3.5 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994]"
           >
             Start a conversation <ArrowRight aria-hidden="true" size={16} />
           </Link>

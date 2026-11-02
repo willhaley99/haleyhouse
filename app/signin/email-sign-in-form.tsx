@@ -67,7 +67,7 @@ export default function EmailSignInForm() {
         maxLength={254}
         value={email}
         onChange={(event) => setEmail(event.target.value)}
-        className="mt-2 w-full rounded-sm border border-stone-300 bg-white px-4 py-3 text-stone-950 outline-none transition focus:border-amber-900 focus:ring-2 focus:ring-amber-900/15"
+        className="mt-2 w-full rounded-xl border border-stone-300 bg-white px-4 py-3 text-stone-950 outline-none transition focus:border-amber-900 focus:ring-2 focus:ring-amber-900/15"
         aria-describedby={message ? "sign-in-message" : undefined}
       />
       {message && (
@@ -78,7 +78,7 @@ export default function EmailSignInForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="mt-5 w-full rounded-sm bg-stone-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-amber-900 disabled:cursor-wait disabled:opacity-60"
+        className="mt-5 w-full rounded-full bg-[#b49b6a] px-6 py-3.5 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994] disabled:cursor-wait disabled:opacity-60"
       >
         {isSubmitting ? "Checking…" : "Continue"}
       </button>

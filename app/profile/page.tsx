@@ -10,9 +10,9 @@ export default function ProfilePage() {
   return (
     <>
       <MemberNavigation />
-      <main className="mx-auto max-w-3xl px-6 py-16">
-      <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">Member portal</p>
-      <h1 className="mt-3 font-serif text-4xl tracking-tight text-stone-950">Your profile</h1>
+      <main className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 sm:py-16">
+      <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900"><span aria-hidden="true" className="h-px w-8 bg-amber-800/50" />Member portal</p>
+      <h1 className="mt-5 font-serif text-5xl leading-[0.98] tracking-[-0.04em] text-stone-950 sm:text-7xl">Your profile</h1>
         <ProfileDetails />
       </main>
     </>
