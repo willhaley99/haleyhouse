@@ -1,8 +1,17 @@
+import { Suspense } from "react";
 import { getServerSession } from "next-auth";
 import Link from "next/link";
 import { authOptions } from "@/auth";
 
-export default async function DashboardPage() {
+export default function DashboardPage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <DashboardContent />
+    </Suspense>
+  );
+}
+
+async function DashboardContent() {
   const session = await getServerSession(authOptions);
 
   if (!session) {
@@ -48,6 +57,15 @@ export default async function DashboardPage() {
           </div>
         </div>
       </div>
+    </main>
+  );
+}
+
+function DashboardLoading() {
+  return (
+    <main className="mx-auto max-w-3xl px-6 py-20 text-center">
+      <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-800">Member portal</p>
+      <h1 className="mt-4 text-4xl font-semibold tracking-tight text-stone-950">Loading your dashboard</h1>
     </main>
   );
 }
