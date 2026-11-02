@@ -9,7 +9,7 @@ const links = [
 
 export default function SiteNavigation({ currentPath = "/" }: { currentPath?: string }) {
   return (
-    <header className="mx-auto max-w-7xl px-5 pt-4 sm:px-8 sm:pt-5">
+    <header className="mx-auto w-full max-w-7xl px-5 pt-4 sm:px-8 sm:pt-5">
       <nav
         aria-label="Main navigation"
         className="relative flex min-h-[4.5rem] items-center justify-between gap-5 border-b border-stone-300/80 px-1 pb-3 sm:px-0"
