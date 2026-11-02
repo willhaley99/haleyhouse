@@ -26,7 +26,7 @@ Official web application for **Haley House Holdings** (`haleyhouseholdings.com`)
 
 1. **Home (`/`)** — Main landing page featuring modern hero section, core investment focus, family philosophy, portfolio highlights, and call-to-action. *(Base version included)*
 2. **About Us (`/about`)** — Story of the family pool, values, and leadership/family members. *(Placeholder)*
-3. **Portfolio & Focus Areas (`/portfolio`)** — Key investment verticals and active holdings. *(Placeholder)*
+3. **Portfolio & Focus Areas (`/portfolio`)** — Redirects to About Us; investment interests are featured on the home page.
 4. **Member Portal (`/dashboard`)** — Protected route for family co-investors to view shared pool metrics via Google Auth. *(Placeholder)*
 5. **Contact (`/contact`)** — Inquiries and deal submission form. *(Placeholder)*
 

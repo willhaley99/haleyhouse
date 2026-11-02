@@ -88,7 +88,7 @@ Open http://localhost:3000 to view the site.
 - `app/` — app router pages and route handlers
 - `app/page.tsx` — home landing page
 - `app/about/page.tsx` — about page
-- `app/portfolio/page.tsx` — portfolio strategy page
+- `app/portfolio/page.tsx` — permanent redirect to About for legacy links
 - `app/dashboard/page.tsx` — protected member dashboard
 - `app/profile/page.tsx` — signed-in member profile and account navigation
 - `app/signin/` — email-first member sign-in

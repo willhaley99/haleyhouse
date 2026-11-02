@@ -97,17 +97,17 @@ export default function HomePage() {
                 </p>
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                   <Link
-                    href="/portfolio"
+                    href="/about"
                     className="group inline-flex items-center gap-3 rounded-full bg-[#b49b6a] px-6 py-3.5 text-sm font-semibold text-[#101c2c] shadow-[0_8px_24px_rgba(16,28,44,0.2)] transition hover:bg-[#c8b994]"
                   >
-                    Explore our focus
+                    Our story
                     <ArrowRight aria-hidden="true" size={16} className="transition-transform group-hover:translate-x-1" />
                   </Link>
                   <Link
-                    href="/about"
+                    href="/contact"
                     className="inline-flex items-center gap-2 rounded-full border border-white/45 px-5 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
                   >
-                    Get to know us <ArrowUpRight aria-hidden="true" size={15} />
+                    Get in touch <ArrowUpRight aria-hidden="true" size={15} />
                   </Link>
                 </div>
                 <a

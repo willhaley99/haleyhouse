@@ -2,8 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const links = [
-  { href: "/about", label: "Our story" },
-  { href: "/portfolio", label: "What we invest in" },
+  { href: "/about", label: "About us" },
   { href: "/dashboard", label: "Member portal" },
 ];
 
