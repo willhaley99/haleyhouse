@@ -71,13 +71,6 @@ export default function ContactForm() {
       >
         Continue to email
       </button>
-      <p className="text-sm text-stone-500">
-        This opens your email app; your message is not sent until you send the email. You can also email{" "}
-        <a className="underline underline-offset-4" href={`mailto:${contactEmail}`}>
-          {contactEmail}
-        </a>
-        .
-      </p>
     </form>
   );
 }
