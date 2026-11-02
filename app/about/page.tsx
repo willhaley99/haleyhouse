@@ -12,27 +12,26 @@ export default function AboutPage() {
       <main className="flex-1">
         <section
           aria-labelledby="about-title"
-          className="relative isolate overflow-hidden border-b border-[#c8b994]/20 bg-[#101c2c] text-white"
+          className="border-b border-stone-200 bg-[#e9edf1]"
         >
-          <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_88%_15%,rgba(49,76,104,0.45)_0%,rgba(16,28,44,0)_48%)]" />
-          <div className="relative mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16 lg:py-24">
+          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16 lg:py-24">
             <div>
-              <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#c8b994]">
-                <span aria-hidden="true" className="h-px w-8 bg-[#c8b994]/70" />
+              <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
+                <span aria-hidden="true" className="h-px w-8 bg-amber-800/60" />
                 About us
               </p>
               <h1
                 id="about-title"
-                className="mt-5 max-w-3xl font-serif text-5xl leading-[0.96] tracking-[-0.045em] text-white sm:text-7xl"
+                className="mt-5 max-w-3xl font-serif text-5xl leading-[0.96] tracking-[-0.045em] text-stone-950 sm:text-7xl"
               >
                 Family resources, invested together.
               </h1>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
+              <p className="mt-6 max-w-2xl text-base leading-8 text-stone-600 sm:text-lg">
                 Based in Louisville, Kentucky, we bring family resources together to pursue
                 promising opportunities and share in the success we work to build.
               </p>
             </div>
-            <aside className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-7 text-white shadow-[0_24px_70px_rgba(0,0,0,0.12)] sm:p-9">
+            <aside className="relative overflow-hidden rounded-2xl bg-[#101c2c] p-7 text-white shadow-[0_24px_70px_rgba(16,28,44,0.14)] sm:p-9">
               <div
                 aria-hidden="true"
                 className="absolute -right-20 -top-24 size-64 rounded-full bg-[radial-gradient(circle,rgba(180,155,106,0.3)_0%,rgba(16,28,44,0)_70%)]"
@@ -105,7 +104,7 @@ export default function AboutPage() {
                   <div
                     role="img"
                     aria-label={`Headshot placeholder for family member ${number}`}
-                    className="flex aspect-[4/4.5] items-center justify-center bg-[#101c2c] text-[#c8b994]"
+                    className="flex aspect-[4/4.5] items-center justify-center bg-[#d7e0e8] text-[#314c68]"
                   >
                     <UserRound aria-hidden="true" size={48} strokeWidth={1} />
                   </div>
@@ -115,9 +114,6 @@ export default function AboutPage() {
                     </h3>
                     <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-amber-900">
                       Title to come
-                    </p>
-                    <p className="mt-3 text-sm leading-6 text-stone-600">
-                      Short introduction to be added.
                     </p>
                   </div>
                 </article>
