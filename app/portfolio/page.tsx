@@ -49,9 +49,9 @@ export default function PortfolioPage() {
             Different opportunities. One considered perspective.
           </h1>
           <p className="mt-7 max-w-3xl text-base leading-8 text-stone-600 sm:text-lg">
-            We look across business growth, real assets, and selective strategic opportunities. Each has
-            its own character; our common thread is a preference for clear rationale, thoughtful partnership,
-            and a time horizon that can support durable value.
+            Our interests range from growing businesses to tangible assets and selective partnerships. What
+            matters most is the strength of the underlying case, the people involved, and whether the terms
+            and time horizon make sense.
           </p>
         </section>
 
@@ -72,30 +72,6 @@ export default function PortfolioPage() {
               </ul>
             </article>
           ))}
-        </section>
-
-        <section className="mt-12 border-y border-stone-300 py-9 sm:mt-16 sm:py-11">
-          <div className="grid gap-6 md:grid-cols-[0.7fr_1.3fr] md:gap-16">
-            <div>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
-                Where our perspective comes from
-              </p>
-              <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight text-stone-950">
-                Experience across disciplines.
-              </h2>
-            </div>
-            <div>
-              <p className="text-sm leading-7 text-stone-600 sm:text-base">
-                Based in Louisville, Kentucky, our family brings experience and involvement in accounting,
-                real estate, property management, nonprofit work, and information technology. These reflect
-                our family’s experience and investment interests, rather than a list of current holdings.
-              </p>
-              <p className="mt-4 text-sm leading-7 text-stone-600 sm:text-base">
-                We look for opportunities where our collective judgment can add context, where the people and
-                purpose make sense to us, and where we can participate with a shared understanding of the risks.
-              </p>
-            </div>
-          </div>
         </section>
 
         <section className="mt-14 border-y border-stone-300 bg-[#e9edf1] px-6 py-10 sm:mt-20 sm:px-10 sm:py-12">
@@ -124,8 +100,8 @@ export default function PortfolioPage() {
           <div className="max-w-2xl">
             <p className="font-serif text-2xl tracking-tight text-stone-950">Opportunity begins with fit.</p>
             <p className="mt-2 text-sm leading-6 text-stone-600">
-              Our areas of interest describe how we think, not a representation of current holdings or a promise
-              that any opportunity will be available. Each opportunity is considered on its own merits.
+              These themes describe our interests, not a list of current holdings or a promise of future
+              opportunities. Any investment involves risk.
             </p>
           </div>
           <Link

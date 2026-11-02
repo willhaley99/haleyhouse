@@ -37,7 +37,7 @@ export default function HomePage() {
             <div className="relative z-10">
               <p className="mb-7 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
                 <span className="h-px w-9 bg-amber-800/60" />
-                A family investment collective
+                A Louisville family investment collective
               </p>
               <h1 className="max-w-3xl font-serif text-[clamp(3.5rem,6.8vw,6rem)] leading-[0.98] tracking-[-0.05em] text-stone-950">
                 Capital with
@@ -45,8 +45,8 @@ export default function HomePage() {
                 <span className="font-normal italic text-amber-900">a longer view.</span>
               </h1>
               <p className="mt-8 max-w-xl text-base leading-8 text-stone-600 sm:text-lg">
-                Based in Louisville, Kentucky, we pool family resources to pursue opportunities we believe
-                in and share in the success we work toward together.
+                We take a patient, practical view of opportunity—looking for sound fundamentals, thoughtful
+                partners, and potential that can stand the test of time.
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <Link
@@ -121,28 +121,6 @@ export default function HomePage() {
                 Independent thinking. Shared conviction.
               </p>
             </div>
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-16">
-          <div className="grid gap-6 border-y border-stone-300 py-7 sm:grid-cols-[0.7fr_1.3fr] sm:items-center sm:gap-12 sm:py-8">
-            <div>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
-                Rooted in Louisville
-              </p>
-              <p className="mt-2 font-serif text-2xl tracking-tight text-stone-950">
-                Shared resources. Shared possibility.
-              </p>
-            </div>
-            <p className="max-w-3xl text-sm leading-7 text-stone-600 sm:text-base">
-              Our family brings experience and involvement across accounting, real estate, property management,
-              nonprofit work, and information technology. Those perspectives shape how we look at businesses,
-              assets, and the people behind them.
-              {" "}
-              <Link href="/about" className="font-semibold text-stone-900 underline decoration-stone-400 underline-offset-4 transition hover:text-amber-900">
-                Our story
-              </Link>
-            </p>
           </div>
         </section>
 
