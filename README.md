@@ -48,6 +48,7 @@ NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=your_secure_random_secret
 GOOGLE_CLIENT_ID=your_google_client_id.apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=your_google_client_secret
+AUTHORIZED_EMAILS=approved1@example.com,approved2@example.com
 ```
 
 Generate a random secret:
@@ -55,6 +56,14 @@ Generate a random secret:
 ```bash
 openssl rand -base64 32
 ```
+
+`AUTHORIZED_EMAILS` is a comma-separated allowlist of approved Google account
+emails. Sign-in requires a verified Google email that matches this list;
+matching is case-insensitive. An empty or unset list denies access. Add or
+remove addresses in this variable to provision or revoke members. In Vercel,
+update it under the `haleyhouse` project's Production environment variables and
+redeploy for the change to take effect. Google Auth Platform's test-user list
+may also restrict sign-in while the OAuth app remains in Testing mode.
 
 ### 3) Run the app
 
@@ -79,6 +88,7 @@ Open http://localhost:3000 to view the site.
 
 - This project is ready to deploy on Vercel
 - Add the same environment variables in the Vercel dashboard before deployment
+- Set `AUTHORIZED_EMAILS` to the exact list of approved member email addresses
 - Set the Google OAuth redirect URI to your production domain under the Auth settings
 
 ## Notes
