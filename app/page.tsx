@@ -94,8 +94,8 @@ export default function HomePage() {
                   <span className="font-normal italic text-amber-200">a longer view.</span>
                 </h1>
                 <p className="mt-7 max-w-2xl text-base leading-8 text-white/85 sm:text-lg sm:leading-9">
-                  We take a patient, practical view of opportunity—looking for sound fundamentals, thoughtful
-                  partners, and potential that can stand the test of time.
+                  Based in Louisville, we bring family resources together to pursue promising opportunities—and
+                  share in the success we work to build.
                 </p>
                 <div className="mt-8 flex flex-wrap items-center gap-4">
                   <Link
