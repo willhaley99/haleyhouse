@@ -1,6 +1,6 @@
 # Haley House Holdings
 
-Official web application for Haley House Holdings (`haleyhouseholdings.com`), a family-run investment collective focused on shared-pool opportunities, venture growth, and long-term joint investments.
+Official web application for Haley House Holdings, a family-run investment collective focused on shared-pool opportunities, venture growth, and long-term joint investments.
 
 ## Brand & design direction
 
@@ -71,10 +71,9 @@ verifies the actual account, and the dashboard remains protected if the
 allowlist is changed. Because the email check reports whether an address is
 approved, share the member sign-in URL only with intended users.
 
-The privacy page at `/privacy` describes the member sign-in data flow and is
-linked from the home and sign-in pages. Review its statements against your
-current practices before treating it as final or using it for Google OAuth
-publishing.
+The published privacy page at `/privacy` describes the member sign-in data
+flow and is linked from the home and sign-in pages. Keep it accurate as the
+site's data practices change.
 
 ### 3) Run the app
 
@@ -93,7 +92,7 @@ Open http://localhost:3000 to view the site.
 - `app/dashboard/page.tsx` — protected member dashboard
 - `app/profile/page.tsx` — signed-in member profile and account navigation
 - `app/signin/` — email-first member sign-in
-- `app/privacy/page.tsx` — draft privacy policy for the website and member portal
+- `app/privacy/page.tsx` — privacy policy for the website and member portal
 - `app/contact/page.tsx` — contact form page
 - `auth.ts` — NextAuth configuration
 - `.env.example` — environment variable template
@@ -104,11 +103,15 @@ Open http://localhost:3000 to view the site.
 - Add the same environment variables in the Vercel dashboard before deployment
 - Set `AUTHORIZED_EMAILS` to the exact list of approved member email addresses
 - Set the Google OAuth redirect URI to your production domain under the Auth settings
-- While the Google OAuth app is in Testing, every member must also be listed as
-  a Google test user. The app's email allowlist remains a separate access check.
-- Before publishing the OAuth app, review the privacy policy and add the
-  production homepage and privacy-policy URLs under Google Auth Platform >
-  Branding. Do not publish until the app's public disclosures are accurate.
+- The Google OAuth app is published in production. The application still
+  independently checks `AUTHORIZED_EMAILS` before allowing a member to sign in.
+- Google Auth Platform branding points to `https://haleyhouse.vercel.app` and
+  `https://haleyhouse.vercel.app/privacy`.
+- The current production domain is `https://haleyhouse.vercel.app`.
+  `haleyhouseholdings.com` has been added to the Vercel project; its GoDaddy
+  DNS records still need to point to Vercel before it can serve the site.
+- The contact form opens a prefilled email in the visitor's email app; the
+  visitor must send it. The site does not receive or store contact inquiries.
 
 ## Notes
 

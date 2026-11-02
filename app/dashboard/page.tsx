@@ -43,22 +43,9 @@ async function DashboardContent() {
             Welcome back, {session.user?.name?.split(" ")[0] ?? "Investor"}
           </h1>
           <p className="mt-4 text-lg text-stone-600">
-            Family co-investor access is enabled. Portfolio metrics and shared opportunities will render here.
+            Your member portal is being set up. Portfolio information and shared opportunities will appear here
+            once they are ready.
           </p>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl bg-stone-900 p-5 text-white">
-              <p className="text-sm text-stone-300">Active pool</p>
-              <p className="mt-2 text-3xl font-semibold">$12.8M</p>
-            </div>
-            <div className="rounded-2xl border border-stone-200 bg-stone-50 p-5">
-              <p className="text-sm text-stone-500">Deployed</p>
-              <p className="mt-2 text-3xl font-semibold text-stone-900">67%</p>
-            </div>
-            <div className="rounded-2xl border border-stone-200 bg-stone-50 p-5">
-              <p className="text-sm text-stone-500">Open deals</p>
-              <p className="mt-2 text-3xl font-semibold text-stone-900">4</p>
-            </div>
-          </div>
         </div>
       </main>
     </>
