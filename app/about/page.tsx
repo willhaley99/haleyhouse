@@ -60,7 +60,7 @@ export default function AboutPage() {
                 <span aria-hidden="true" className="h-px w-8 bg-amber-800/60" />
                 Our story
               </p>
-              <h2 className="mt-4 max-w-sm font-serif text-3xl leading-tight tracking-tight text-stone-950 sm:text-4xl">
+              <h2 className="mt-4 max-w-sm font-serif text-4xl leading-tight tracking-tight text-stone-950 sm:text-5xl">
                 Practical experience across different fields.
               </h2>
             </div>
