@@ -61,31 +61,33 @@ export default function PortfolioPage() {
           <figure className="grid grid-rows-[1fr_auto]">
             <div className="relative min-h-56 bg-stone-800 sm:min-h-72">
               <Image
-                src="/images/louisville-night.jpg"
-                alt="Downtown Louisville skyline beneath the Milky Way, reflected in the Ohio River at night."
+                src="/images/historic-brick-facade.jpg"
+                alt="Historic red brick facade with ornate detailing and arched windows."
                 fill
                 loading="eager"
                 sizes="(max-width: 768px) 100vw, 55vw"
-                className="object-cover object-center saturate-[.75]"
+                className="object-cover object-center saturate-[.85] sepia-[.08]"
               />
             </div>
             <PhotoCredit
-              creator="Aroun Kesavaraj"
-              title="Downtown Louisville"
-              sourceUrl="https://commons.wikimedia.org/wiki/File:Downtown_Louisville.jpg"
+              creator="Alexey Baikov"
+              title="Historic Red Brick Building Facade with Arched Windows"
+              sourceUrl="https://www.pexels.com/photo/historic-red-brick-building-facade-with-arched-windows-36554120/"
+              licenseName="Pexels License"
+              licenseUrl="https://www.pexels.com/license/"
               className="bg-white px-4 py-2 text-[10px] leading-5 text-stone-500 sm:px-5"
             />
           </figure>
           <div className="flex flex-col justify-center px-6 py-7 sm:px-9 sm:py-10">
             <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
-              A view of our home city
+              Historic architecture
             </p>
             <h2 className="mt-3 font-serif text-2xl leading-tight tracking-tight text-stone-950 sm:text-3xl">
-              Grounded in the places where we live and work.
+              Built to endure.
             </h2>
             <p className="mt-3 text-sm leading-7 text-stone-600">
-              This Louisville cityscape is illustrative; it does not represent a Haley House
-              holding or investment.
+              This architectural photograph is illustrative; it does not represent a Haley House holding or
+              investment.
             </p>
           </div>
         </section>
