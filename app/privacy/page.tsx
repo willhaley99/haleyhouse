@@ -58,19 +58,6 @@ export default function PrivacyPage() {
               </section>
             ))}
 
-            <section>
-              <h2 className="text-xl font-semibold text-stone-900">Contact us</h2>
-              <p className="mt-3 text-base leading-7 text-stone-600">
-                For privacy questions or requests, email{" "}
-                <a
-                  className="font-medium text-amber-900 underline underline-offset-4"
-                  href="mailto:willhaley99@gmail.com"
-                >
-                  willhaley99@gmail.com
-                </a>
-                .
-              </p>
-            </section>
           </div>
 
         </article>
