@@ -65,6 +65,12 @@ update it under the `haleyhouse` project's Production environment variables and
 redeploy for the change to take effect. Google Auth Platform's test-user list
 may also restrict sign-in while the OAuth app remains in Testing mode.
 
+The member sign-in page asks for an email first, checks this allowlist, and
+starts Google sign-in only for an approved address. Google sign-in still
+verifies the actual account, and the dashboard remains protected if the
+allowlist is changed. Because the email check reports whether an address is
+approved, share the member sign-in URL only with intended users.
+
 ### 3) Run the app
 
 ```bash
@@ -80,6 +86,7 @@ Open http://localhost:3000 to view the site.
 - `app/about/page.tsx` — about page
 - `app/portfolio/page.tsx` — portfolio strategy page
 - `app/dashboard/page.tsx` — protected member dashboard
+- `app/signin/` — email-first member sign-in
 - `app/contact/page.tsx` — contact form page
 - `auth.ts` — NextAuth configuration
 - `.env.example` — environment variable template

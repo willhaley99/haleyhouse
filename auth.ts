@@ -9,6 +9,9 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? "",
     }),
   ],
+  pages: {
+    signIn: "/signin",
+  },
   callbacks: {
     signIn: ({ account, profile, user }) =>
       account?.provider === "google" &&

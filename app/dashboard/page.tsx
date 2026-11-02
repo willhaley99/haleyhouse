@@ -23,10 +23,10 @@ async function DashboardContent() {
           This portal is reserved for approved family co-investors and partners.
         </p>
         <Link
-          href="/api/auth/signin"
+          href="/signin"
           className="mt-8 inline-flex rounded-full bg-stone-900 px-6 py-3 text-sm font-semibold text-white hover:bg-stone-700"
         >
-          Continue with Google
+          Continue
         </Link>
       </main>
     );
