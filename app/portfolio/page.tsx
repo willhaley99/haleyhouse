@@ -7,37 +7,34 @@ import SiteFooter from "@/app/components/site-footer";
 
 const verticals = [
   {
-    title: "Venture growth",
-    summary: "Backing the potential of enduring businesses.",
-    text: "We are interested in businesses with a clear purpose, a meaningful problem to solve, and room to grow over time. We consider the quality of the team, the strength of the business model, and the realities of the market it serves.",
-    questions: ["What gives the business a reason to endure?", "What would sustainable growth require?"],
+    title: "Business ownership",
+    text: "Businesses with room to grow and strong fundamentals.",
+    image: "/images/industrial-warehouse.jpg",
+    alt: "An expansive industrial interior with structural steel beams.",
+    creator: "Pixabay",
+    photoTitle: "Gray Concrete Building Interior",
+    sourceUrl: "https://www.pexels.com/photo/gray-concrete-building-interior-236709/",
+    imagePosition: "object-center",
   },
   {
     title: "Real assets",
-    summary: "Taking a grounded view of long-lived assets.",
-    text: "Physical assets can play a role in a long-term investment perspective. We look at the asset itself, the people responsible for operating it, the sources of value, and the risks that may affect its use or performance.",
-    questions: ["What supports the asset's underlying value?", "Which operating and market risks matter most?"],
+    text: "Durable assets with clear purpose and potential.",
+    image: "/images/rural-hills.jpg",
+    alt: "Green hills and mature trees across a quiet rural landscape.",
+    creator: "Mark Daniel",
+    photoTitle: "View of a Hill",
+    sourceUrl: "https://www.pexels.com/photo/view-of-a-hill-17070425/",
+    imagePosition: "object-center",
   },
   {
-    title: "Strategic capital",
-    summary: "Staying open to selective, aligned opportunities.",
-    text: "Some opportunities do not fit neatly into a single category. We remain open to situations where a distinct advantage, strong alignment, and a thoughtful structure can make participation worth considering.",
-    questions: ["Why is this opportunity a fit for our perspective?", "Are the incentives and expectations aligned?"],
-  },
-];
-
-const considerations = [
-  {
-    title: "Clarity of purpose",
-    text: "Can we explain what the opportunity is, how it may create value, and what assumptions that view depends on?",
-  },
-  {
-    title: "People and alignment",
-    text: "Do the people involved have the experience, incentives, and shared expectations to pursue the opportunity responsibly?",
-  },
-  {
-    title: "Risk and time",
-    text: "What could go wrong, what may be difficult to change, and does the expected time horizon make sense for those participating?",
+    title: "Strategic opportunities",
+    text: "Selective partnerships shaped by alignment and thoughtful terms.",
+    image: "/images/architectural-plans.jpg",
+    alt: "Architectural plans and a pencil resting on a wood table.",
+    creator: "Ron Lach",
+    photoTitle: "White Printer Paper on Brown Wooden Desk",
+    sourceUrl: "https://www.pexels.com/photo/white-printer-paper-on-brown-wooden-desk-9615249/",
+    imagePosition: "object-[center_65%]",
   },
 ];
 
@@ -45,103 +42,79 @@ export default function PortfolioPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <SiteNavigation currentPath="/portfolio" />
-      <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-16 sm:py-20">
-        <section className="max-w-4xl border-b border-stone-300 pb-12 sm:pb-16">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">Portfolio focus</p>
-          <h1 className="mt-5 max-w-3xl font-serif text-4xl leading-[1.05] tracking-tight text-stone-950 sm:text-6xl">
-            Different opportunities. One considered perspective.
-          </h1>
-          <p className="mt-7 max-w-3xl text-base leading-8 text-stone-600 sm:text-lg">
-            Our interests range from growing businesses to tangible assets and selective partnerships. What
-            matters most is the strength of the underlying case, the people involved, and whether the terms
-            and time horizon make sense.
-          </p>
-        </section>
-
-        <section className="mt-10 grid overflow-hidden border border-stone-300 bg-white md:grid-cols-[1.1fr_0.9fr]">
-          <figure className="grid grid-rows-[1fr_auto]">
-            <div className="relative min-h-56 bg-stone-800 sm:min-h-72">
-              <Image
-                src="/images/historic-brick-facade.jpg"
-                alt="Historic red brick facade with ornate detailing and arched windows."
-                fill
-                loading="eager"
-                sizes="(max-width: 768px) 100vw, 55vw"
-                className="object-cover object-center saturate-[.85] sepia-[.08]"
+      <main className="mx-auto w-full max-w-7xl flex-1 px-5 py-10 sm:px-8 sm:py-14">
+        <section aria-labelledby="portfolio-title">
+          <div className="relative isolate min-h-[430px] overflow-hidden bg-[#101c2c] sm:min-h-[520px]">
+            <Image
+              src="/images/historic-brick-facade.jpg"
+              alt="Historic red brick facade with ornate detailing and arched windows."
+              fill
+              loading="eager"
+              sizes="(max-width: 768px) 100vw, 1280px"
+              className="object-cover object-center saturate-[.85] sepia-[.08]"
+            />
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[#101c2c]/90 via-[#101c2c]/45 to-transparent" />
+            <div className="relative flex min-h-[430px] max-w-3xl flex-col justify-center px-6 py-16 sm:min-h-[520px] sm:px-12 lg:px-16">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-200">Portfolio focus</p>
+              <h1 id="portfolio-title" className="mt-5 max-w-2xl font-serif text-5xl leading-[0.98] tracking-tight text-white sm:text-7xl">
+                A long view.
+              </h1>
+              <p className="mt-6 max-w-lg text-base leading-7 text-white/85 sm:text-lg">
+                Businesses. Real assets. Thoughtful partnerships.
+              </p>
+            </div>
+            <div className="absolute inset-x-5 bottom-3 z-10 flex flex-col gap-1 text-[10px] leading-5 text-white/75 sm:inset-x-8 sm:bottom-5 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
+              <p>Illustrative photography; not a Haley House holding.</p>
+              <PhotoCredit
+                creator="Alexey Baikov"
+                title="Historic Red Brick Building Facade with Arched Windows"
+                sourceUrl="https://www.pexels.com/photo/historic-red-brick-building-facade-with-arched-windows-36554120/"
+                licenseName="Pexels License"
+                licenseUrl="https://www.pexels.com/license/"
+                className="text-left sm:text-right"
               />
             </div>
-            <PhotoCredit
-              creator="Alexey Baikov"
-              title="Historic Red Brick Building Facade with Arched Windows"
-              sourceUrl="https://www.pexels.com/photo/historic-red-brick-building-facade-with-arched-windows-36554120/"
-              licenseName="Pexels License"
-              licenseUrl="https://www.pexels.com/license/"
-              className="bg-white px-4 py-2 text-[10px] leading-5 text-stone-500 sm:px-5"
-            />
-          </figure>
-          <div className="flex flex-col justify-center px-6 py-7 sm:px-9 sm:py-10">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
-              Historic architecture
-            </p>
-            <h2 className="mt-3 font-serif text-2xl leading-tight tracking-tight text-stone-950 sm:text-3xl">
-              Built to endure.
-            </h2>
-            <p className="mt-3 text-sm leading-7 text-stone-600">
-              This architectural photograph is illustrative; it does not represent a Haley House holding or
-              investment.
-            </p>
           </div>
         </section>
 
-        <section className="mt-10 grid gap-x-10 md:grid-cols-3">
+        <section aria-label="Investment interests" className="mt-10 grid gap-5 sm:mt-14 md:grid-cols-3 md:gap-6">
           {verticals.map((vertical, index) => (
-            <article key={vertical.title} className="border-b border-stone-300 py-7 md:border-t md:py-8">
-              <p className="font-mono text-[10px] text-amber-900/70">0{index + 1}</p>
-              <h2 className="mt-5 font-serif text-2xl tracking-tight text-stone-900">{vertical.title}</h2>
-              <p className="mt-2 text-sm font-medium leading-6 text-stone-700">{vertical.summary}</p>
-              <p className="mt-4 text-sm leading-7 text-stone-600">{vertical.text}</p>
-              <ul className="mt-5 space-y-3 border-t border-stone-200 pt-4">
-                {vertical.questions.map((question) => (
-                  <li key={question} className="flex gap-3 text-xs leading-5 text-stone-600">
-                    <span aria-hidden="true" className="mt-2 size-1 shrink-0 rounded-full bg-amber-800" />
-                    {question}
-                  </li>
-                ))}
-              </ul>
+            <article key={vertical.title}>
+              <figure className="grid h-full grid-rows-[1fr_auto] overflow-hidden border border-stone-300 bg-white">
+                <div className="relative aspect-[4/3] overflow-hidden bg-stone-200">
+                  <Image
+                    src={vertical.image}
+                    alt={vertical.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className={`object-cover ${vertical.imagePosition} saturate-[.82] transition-transform duration-500 hover:scale-[1.025] motion-reduce:transition-none motion-reduce:hover:scale-100`}
+                  />
+                  <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-[#101c2c]/80 via-transparent to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 text-white sm:p-6">
+                    <h2 className="font-serif text-2xl tracking-tight sm:text-3xl">{vertical.title}</h2>
+                    <span className="pb-1 font-mono text-[10px] text-white/75">0{index + 1}</span>
+                  </div>
+                </div>
+                <div>
+                  <p className="px-4 pt-4 text-sm leading-6 text-stone-600 sm:px-5">{vertical.text}</p>
+                  <PhotoCredit
+                    creator={vertical.creator}
+                    title={vertical.photoTitle}
+                    sourceUrl={vertical.sourceUrl}
+                    licenseName="Pexels License"
+                    licenseUrl="https://www.pexels.com/license/"
+                    className="flex min-h-12 items-center px-4 py-2 text-[9px] leading-4 text-stone-500 sm:px-5"
+                  />
+                </div>
+              </figure>
             </article>
           ))}
         </section>
 
-        <section className="mt-14 border-y border-stone-300 bg-[#e9edf1] px-6 py-10 sm:mt-20 sm:px-10 sm:py-12">
-          <div className="grid gap-8 md:grid-cols-[0.7fr_1.3fr] md:gap-16">
-            <div>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">How we evaluate</p>
-              <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight text-stone-950">
-                Start with the questions that matter.
-              </h2>
-            </div>
-            <div className="divide-y divide-stone-300">
-              {considerations.map((item, index) => (
-                <article key={item.title} className="grid gap-2 py-5 first:pt-0 last:pb-0 sm:grid-cols-[0.65fr_1.35fr] sm:gap-6">
-                  <h3 className="text-sm font-semibold text-stone-900">
-                    <span className="mr-3 font-mono text-[10px] text-amber-900/70">0{index + 1}</span>
-                    {item.title}
-                  </h3>
-                  <p className="text-sm leading-6 text-stone-600">{item.text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="mt-14 flex flex-col gap-6 border-t border-stone-300 pt-8 sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
-          <div className="max-w-2xl">
-            <p className="font-serif text-2xl tracking-tight text-stone-950">Opportunity begins with fit.</p>
-            <p className="mt-2 text-sm leading-6 text-stone-600">
-              These themes describe our interests, not a list of current holdings or a promise of future
-              opportunities. Any investment involves risk.
-            </p>
-          </div>
+        <section className="mt-12 flex flex-col gap-5 border-t border-stone-300 pt-7 sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
+          <p className="max-w-3xl text-xs leading-5 text-stone-500">
+            Illustrative images only. These are areas of interest, not current holdings or a promise of future investments. All investments involve risk.
+          </p>
           <Link
             href="/contact"
             className="inline-flex w-fit shrink-0 items-center gap-2 rounded-sm bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-amber-900"
