@@ -70,22 +70,26 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-        <section id="investment-interests" aria-label="Investment interests" className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
-          <div className="mb-9 flex flex-col gap-4 border-b border-stone-300 pb-6 sm:flex-row sm:items-end sm:justify-between">
+        <section id="investment-interests" aria-label="Investment interests" className="relative isolate overflow-hidden border-y border-[#c8b994]/15 bg-[#111722]">
+          <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(49,76,104,0.3)_0%,rgba(17,23,34,0)_48%)]" />
+          <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
+          <div className="mb-9 flex flex-col gap-4 border-b border-white/15 pb-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">Areas of interest</p>
-              <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight tracking-tight text-stone-950 sm:text-4xl">
+              <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#c8b994]">
+                <span aria-hidden="true" className="h-px w-8 bg-[#c8b994]/70" />Areas of interest
+              </p>
+              <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight tracking-tight text-white sm:text-4xl">
                 Grounded in real potential.
               </h2>
             </div>
-            <p className="max-w-md text-sm leading-6 text-stone-600">
+            <p className="max-w-md text-sm leading-6 text-white/65">
               Selective interests, guided by fundamentals, alignment, and time.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {verticals.map((vertical, index) => (
               <article key={vertical.title} className="h-full">
-                <figure className="grid h-full grid-rows-[1fr_auto] overflow-hidden border border-stone-300 bg-white">
+                <figure className="grid h-full grid-rows-[1fr_auto] overflow-hidden rounded-2xl border border-white/15 bg-[#182334] shadow-[0_20px_50px_rgba(0,0,0,0.18)]">
                   <div className="relative aspect-[4/3] overflow-hidden bg-stone-200">
                     <Image
                       src={vertical.image}
@@ -101,32 +105,33 @@ export default function PortfolioPage() {
                     </div>
                   </div>
                   <div>
-                    <p className="px-4 pt-4 text-sm leading-6 text-stone-600 sm:px-5">{vertical.text}</p>
+                    <p className="px-4 pt-4 text-sm leading-6 text-white/75 sm:px-5">{vertical.text}</p>
                     <PhotoCredit
                       creator={vertical.creator}
                       title={vertical.photoTitle}
                       sourceUrl={vertical.sourceUrl}
                       licenseName="Pexels License"
                       licenseUrl="https://www.pexels.com/license/"
-                      className="flex min-h-12 items-center px-4 py-2 text-[9px] leading-4 text-stone-500 sm:px-5"
+                      className="flex min-h-12 items-center px-4 py-2 text-[9px] leading-4 text-white/55 sm:px-5"
                     />
                   </div>
                 </figure>
               </article>
             ))}
           </div>
-        </section>
 
-        <section className="mt-12 flex flex-col gap-5 border-t border-stone-300 pt-7 sm:mt-16 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-3xl text-xs leading-5 text-stone-500">
-            Illustrative images only. These are areas of interest, not current holdings or a promise of future investments. All investments involve risk.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full bg-[#b49b6a] px-5 py-3.5 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994]"
-          >
-            Start a conversation <ArrowRight aria-hidden="true" size={16} />
-          </Link>
+          <div className="mt-10 flex flex-col gap-5 border-t border-white/15 pt-7 sm:mt-14 sm:flex-row sm:items-center sm:justify-between">
+            <p className="max-w-3xl text-xs leading-5 text-white/55">
+              Illustrative images only. These are areas of interest, not current holdings or a promise of future investments. All investments involve risk.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full bg-[#b49b6a] px-5 py-3.5 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994]"
+            >
+              Start a conversation <ArrowRight aria-hidden="true" size={16} />
+            </Link>
+          </div>
+          </div>
         </section>
       </main>
       <SiteFooter />

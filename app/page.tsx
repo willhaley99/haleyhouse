@@ -135,28 +135,30 @@ export default function HomePage() {
           </figure>
         </section>
 
-        <section id="approach" className="border-y border-stone-200 bg-[#e9edf1]">
+        <section id="approach" className="relative isolate overflow-hidden border-y border-[#c8b994]/20 bg-[#101c2c]">
+          <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_82%_15%,rgba(49,76,104,0.42)_0%,rgba(16,28,44,0)_48%)]" />
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
-            <div className="grid gap-10 md:grid-cols-[0.7fr_1.3fr] md:gap-16">
+            <div className="relative grid gap-10 md:grid-cols-[0.7fr_1.3fr] md:gap-16">
               <div>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
+                <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#c8b994]">
+                  <span aria-hidden="true" className="h-px w-8 bg-[#c8b994]/70" />
                   What guides us
                 </p>
-                <h2 className="mt-4 max-w-sm font-serif text-3xl leading-tight tracking-tight text-stone-950 sm:text-4xl">
+                <h2 className="mt-4 max-w-sm font-serif text-3xl leading-tight tracking-tight text-white sm:text-4xl">
                   Good decisions begin with shared principles.
                 </h2>
               </div>
-              <div className="grid gap-0 sm:grid-cols-3">
+              <div className="grid gap-3 sm:grid-cols-3">
                 {principles.map((principle) => (
                   <article
                     key={principle.number}
-                    className="border-t border-stone-300 py-6 sm:border-l sm:border-t-0 sm:px-6 sm:first:border-l-0 sm:first:pl-0 sm:last:pr-0"
+                    className="rounded-2xl border border-white/10 bg-white/[0.035] p-5 sm:p-6"
                   >
-                    <p className="font-mono text-[11px] text-amber-900/70">{principle.number}</p>
-                    <h3 className="mt-5 text-sm font-semibold tracking-wide text-stone-900">
+                    <p className="font-mono text-[11px] text-[#c8b994]">{principle.number}</p>
+                    <h3 className="mt-5 text-sm font-semibold tracking-wide text-white">
                       {principle.title}
                     </h3>
-                    <p className="mt-3 text-sm leading-6 text-stone-600">{principle.text}</p>
+                    <p className="mt-3 text-sm leading-6 text-white/65">{principle.text}</p>
                   </article>
                 ))}
               </div>
@@ -164,27 +166,30 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section aria-labelledby="areas-title" className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
-          <div className="mb-9 flex flex-col gap-4 border-b border-stone-300 pb-6 sm:flex-row sm:items-end sm:justify-between">
+        <section aria-labelledby="areas-title" className="relative isolate overflow-hidden border-b border-[#c8b994]/15 bg-[#111722]">
+          <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(49,76,104,0.3)_0%,rgba(17,23,34,0)_50%)]" />
+          <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
+          <div className="mb-9 flex flex-col gap-4 border-b border-white/15 pb-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
+              <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#c8b994]">
+                <span aria-hidden="true" className="h-px w-8 bg-[#c8b994]/70" />
                 Areas of interest
               </p>
               <h2
                 id="areas-title"
-                className="mt-4 max-w-xl font-serif text-3xl leading-tight tracking-tight text-stone-950 sm:text-4xl"
+                className="mt-4 max-w-xl font-serif text-3xl leading-tight tracking-tight text-white sm:text-4xl"
               >
                 A considered view of opportunity.
               </h2>
             </div>
-            <p className="max-w-md text-sm leading-6 text-stone-600">
+            <p className="max-w-md text-sm leading-6 text-white/65">
               Illustrative images only; they do not represent current holdings or specific investments.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {areasOfInterest.map((area) => (
               <article key={area.number} className="h-full">
-                <figure className="grid h-full grid-rows-[1fr_auto] overflow-hidden border border-stone-300 bg-white">
+                <figure className="grid h-full grid-rows-[1fr_auto] overflow-hidden rounded-2xl border border-white/15 bg-[#182334] shadow-[0_20px_50px_rgba(0,0,0,0.18)]">
                   <div className="relative aspect-[4/3] overflow-hidden bg-stone-200">
                     <Image
                       src={area.image}
@@ -205,34 +210,39 @@ export default function HomePage() {
                     sourceUrl={area.sourceUrl}
                     licenseName="Pexels License"
                     licenseUrl="https://www.pexels.com/license/"
-                    className="flex min-h-12 items-center px-4 py-2 text-[9px] leading-4 text-stone-500"
+                    className="flex min-h-12 items-center px-4 py-2 text-[9px] leading-4 text-white/55"
                   />
                 </figure>
               </article>
             ))}
           </div>
+          </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
-          <div className="flex flex-col gap-8 rounded-xl border border-stone-200 bg-[#fcfdfd] px-7 py-9 sm:px-10 sm:py-10 md:flex-row md:items-end md:justify-between">
+        <section className="relative isolate overflow-hidden bg-[#101c2c]">
+          <div aria-hidden="true" className="absolute -right-36 -top-48 size-[28rem] rounded-full bg-[radial-gradient(circle,#314c68_0%,rgba(16,28,44,0)_70%)] opacity-60" />
+          <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
+          <div className="flex flex-col gap-8 rounded-2xl border border-[#c8b994]/25 bg-white/[0.035] px-7 py-9 shadow-[0_24px_70px_rgba(0,0,0,0.18)] sm:px-10 sm:py-12 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
+              <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#c8b994]">
+                <span aria-hidden="true" className="h-px w-8 bg-[#c8b994]/70" />
                 Built for partnership
               </p>
-              <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight tracking-tight text-stone-950 sm:text-4xl">
+              <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight tracking-tight text-white sm:text-4xl">
                 A considered approach to what comes next.
               </h2>
-              <p className="mt-4 max-w-lg text-sm leading-7 text-stone-600">
+              <p className="mt-4 max-w-lg text-sm leading-7 text-white/65">
                 For thoughtful conversations about shared capital, opportunities, and the long view.
               </p>
             </div>
             <Link
               href="/contact"
-              className="group inline-flex shrink-0 items-center gap-3 rounded-full border border-stone-300 px-5 py-3 text-sm font-semibold text-stone-800 transition hover:border-stone-900 hover:bg-stone-950 hover:text-white"
+              className="group inline-flex shrink-0 items-center gap-3 rounded-full bg-[#b49b6a] px-6 py-3.5 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994]"
             >
               Start a conversation
               <ArrowUpRight aria-hidden="true" size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
+          </div>
           </div>
         </section>
       </main>
