@@ -54,8 +54,8 @@ export default function AboutPage() {
         </section>
 
         <section className="bg-white">
-          <div className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:px-8 sm:py-20 md:grid-cols-[0.7fr_1.3fr] md:gap-16">
-            <div>
+          <div className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:px-8 sm:py-20 md:grid-cols-[1.3fr_0.7fr] md:gap-16">
+            <div className="md:order-2">
               <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
                 <span aria-hidden="true" className="h-px w-8 bg-amber-800/60" />
                 Our story
@@ -64,7 +64,7 @@ export default function AboutPage() {
                 Practical experience across different fields.
               </h2>
             </div>
-            <div className="space-y-5 text-base leading-8 text-stone-600">
+            <div className="space-y-5 text-base leading-8 text-stone-600 md:order-1">
               <p>
                 Across accounting, real estate, property management, nonprofit work, and
                 information technology, our family has developed practical experience with
