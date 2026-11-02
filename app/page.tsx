@@ -74,50 +74,47 @@ export default function HomePage() {
             />
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-r from-[#101c2c]/95 via-[#101c2c]/72 to-[#101c2c]/20"
+              className="absolute inset-0 bg-gradient-to-b from-[#101c2c]/45 via-[#101c2c]/40 to-[#101c2c]/75"
             />
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-t from-[#101c2c]/65 via-transparent to-[#101c2c]/15"
-            />
-            <div className="relative mx-auto flex w-full max-w-7xl items-center px-5 py-24 sm:px-8 sm:py-28">
-              <div className="max-w-5xl">
-                <p className="mb-7 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-200">
+            <div className="relative mx-auto flex w-full max-w-7xl items-center justify-center px-5 py-24 sm:px-8 sm:py-28">
+              <div className="max-w-5xl text-center">
+                <p className="mb-7 flex items-center justify-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-200">
                   <span className="h-px w-9 bg-amber-200/70" />
                   A Louisville family investment collective
+                  <span className="h-px w-9 bg-amber-200/70" />
                 </p>
                 <h1
                   id="home-hero-title"
-                  className="font-serif text-[clamp(3.25rem,8vw,7.5rem)] leading-[0.94] tracking-[-0.05em] text-white"
+                  className="font-serif text-[clamp(3.5rem,10vw,8.5rem)] leading-[0.94] tracking-[-0.05em] text-white"
                 >
                   Capital with
                   <br />
-                  <span className="font-normal italic text-amber-200">a longer view.</span>
+                  <span className="font-normal italic text-[#c6f36b]">a longer view.</span>
                 </h1>
-                <p className="mt-7 max-w-2xl text-base leading-8 text-white/85 sm:text-lg sm:leading-9">
+                <p className="mx-auto mt-7 max-w-3xl text-base leading-8 text-white/90 sm:text-lg sm:leading-9">
                   Based in Louisville, we bring family resources together to pursue promising opportunities—and
                   share in the success we work to build.
                 </p>
-                <div className="mt-8 flex flex-wrap items-center gap-4">
+                <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                   <Link
                     href="/portfolio"
-                    className="group inline-flex items-center gap-3 rounded-full bg-[#f3f5f7] px-6 py-3.5 text-sm font-semibold text-[#101c2c] shadow-[0_8px_24px_rgba(16,28,44,0.2)] transition hover:bg-amber-100"
+                    className="group inline-flex items-center gap-3 rounded-full bg-[#c6f36b] px-6 py-3.5 text-sm font-semibold text-[#101c2c] shadow-[0_8px_24px_rgba(16,28,44,0.2)] transition hover:bg-[#d7f58c]"
                   >
                     Explore our focus
                     <ArrowRight aria-hidden="true" size={16} className="transition-transform group-hover:translate-x-1" />
                   </Link>
                   <Link
                     href="/about"
-                    className="inline-flex items-center gap-2 px-3 py-3 text-sm font-semibold text-white transition hover:text-amber-200"
+                    className="inline-flex items-center gap-2 rounded-full border border-white/45 px-5 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
                   >
                     Get to know us <ArrowUpRight aria-hidden="true" size={15} />
                   </Link>
                 </div>
                 <a
                   href="#approach"
-                  className="mt-12 inline-flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-white/75 transition hover:text-white"
+                  className="mx-auto mt-12 flex w-fit items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-white/75 transition hover:text-white"
                 >
-                  <span className="flex size-8 items-center justify-center rounded-full border border-white/45">
+                  <span className="flex size-8 items-center justify-center rounded-full border border-[#c6f36b]/70 text-[#c6f36b]">
                     <ArrowDown aria-hidden="true" size={13} />
                   </span>
                   Discover our approach
