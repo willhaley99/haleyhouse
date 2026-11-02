@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, UserRound } from "lucide-react";
+import { ArrowUpRight, UserRound } from "lucide-react";
 import SiteNavigation from "@/app/components/site-navigation";
 import SiteFooter from "@/app/components/site-footer";
 
@@ -10,61 +10,49 @@ export default function AboutPage() {
     <div className="flex min-h-screen flex-col bg-stone-50">
       <SiteNavigation currentPath="/about" />
       <main className="flex-1">
-        <section
-          aria-labelledby="about-title"
-          className="border-b border-stone-200 bg-[#e9edf1]"
-        >
-          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:gap-16 lg:py-24">
-            <div>
-              <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
-                <span aria-hidden="true" className="h-px w-8 bg-amber-800/60" />
-                About us
-              </p>
-              <h1
-                id="about-title"
-                className="mt-5 max-w-3xl font-serif text-5xl leading-[0.96] tracking-[-0.045em] text-stone-950 sm:text-7xl"
-              >
-                Family resources, invested together.
-              </h1>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-stone-600 sm:text-lg">
-                Based in Louisville, Kentucky, we bring family resources together to pursue
-                promising opportunities and share in the success we work to build.
-              </p>
-            </div>
-            <aside className="relative overflow-hidden rounded-2xl bg-[#101c2c] p-7 text-white shadow-[0_24px_70px_rgba(16,28,44,0.14)] sm:p-9">
-              <div
-                aria-hidden="true"
-                className="absolute -right-20 -top-24 size-64 rounded-full bg-[radial-gradient(circle,rgba(180,155,106,0.3)_0%,rgba(16,28,44,0)_70%)]"
-              />
-              <div className="relative">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#c8b994]">
+        <section aria-labelledby="about-title" className="border-b border-stone-200 bg-white">
+          <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24 lg:py-28">
+            <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-20">
+              <div>
+                <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
+                  <span aria-hidden="true" className="h-px w-8 bg-amber-800/60" />
+                  About Haley House
+                </p>
+                <h1
+                  id="about-title"
+                  className="mt-6 max-w-3xl font-serif text-5xl leading-[0.96] tracking-[-0.045em] text-stone-950 sm:text-7xl"
+                >
+                  Family resources, <span className="italic text-[#8b744b]">invested together.</span>
+                </h1>
+              </div>
+              <div className="max-w-xl border-l border-[#b49b6a] pl-6 sm:pl-8 lg:mb-2">
+                <p className="text-base leading-8 text-stone-600 sm:text-lg">
+                  Based in Louisville, Kentucky, we bring family resources together to pursue
+                  promising opportunities and share in the success we work to build.
+                </p>
+                <p className="mt-5 text-[10px] font-semibold uppercase tracking-[0.2em] text-stone-500">
                   Louisville, Kentucky
                 </p>
-                <p className="mt-7 font-serif text-2xl leading-snug tracking-tight sm:text-3xl">
-                  A shared perspective. A patient approach. A long view.
-                </p>
-                <div className="mt-8 h-px w-12 bg-[#c8b994]/70" />
-                <p className="mt-5 text-sm leading-6 text-white/70">
-                  Haley House Holdings is a family investment collective built around shared
-                  resources and thoughtful partnership.
-                </p>
               </div>
-            </aside>
+            </div>
           </div>
         </section>
 
-        <section className="bg-white">
-          <div className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:px-8 sm:py-20 md:grid-cols-[1.3fr_0.7fr] md:gap-16">
-            <div className="md:order-2">
-              <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
-                <span aria-hidden="true" className="h-px w-8 bg-amber-800/60" />
+        <section aria-labelledby="story-title" className="bg-[#101c2c] text-white">
+          <div className="mx-auto grid max-w-7xl gap-8 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+            <div>
+              <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-[#c8b994]">
+                <span aria-hidden="true" className="h-px w-8 bg-[#c8b994]/70" />
                 Our story
               </p>
-              <h2 className="mt-4 max-w-sm font-serif text-4xl leading-tight tracking-tight text-stone-950 sm:text-5xl">
+              <h2
+                id="story-title"
+                className="mt-5 max-w-md font-serif text-4xl leading-tight tracking-tight sm:text-5xl"
+              >
                 Practical experience across different fields.
               </h2>
             </div>
-            <div className="space-y-5 text-base leading-8 text-stone-600 md:order-1">
+            <div className="space-y-6 border-t border-white/15 pt-6 text-base leading-8 text-white/75 lg:border-l lg:border-t-0 lg:pl-12 lg:pt-0">
               <p>
                 Across accounting, real estate, property management, nonprofit work, and
                 information technology, our family has developed practical experience with
@@ -79,37 +67,40 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section id="family" className="border-y border-stone-200 bg-[#e9edf1]">
+        <section id="family" aria-labelledby="family-title" className="bg-[#e9edf1]">
           <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20">
-            <div className="mb-9 flex flex-col gap-4 border-b border-stone-300 pb-6 sm:flex-row sm:items-end sm:justify-between">
+            <div className="grid gap-5 border-b border-stone-300 pb-7 sm:grid-cols-[1fr_auto] sm:items-end">
               <div>
                 <p className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
                   <span aria-hidden="true" className="h-px w-8 bg-amber-800/60" />
                   The people behind Haley House
                 </p>
-                <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight tracking-tight text-stone-950 sm:text-4xl">
+                <h2
+                  id="family-title"
+                  className="mt-4 max-w-xl font-serif text-3xl leading-tight tracking-tight text-stone-950 sm:text-4xl"
+                >
                   Family, working toward a shared vision.
                 </h2>
               </div>
-              <p className="max-w-md text-sm leading-6 text-stone-600">
+              <p className="max-w-sm text-sm leading-6 text-stone-600">
                 Personal introductions and portraits will be added here.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:grid-cols-5">
+            <div className="mt-2 grid gap-x-12 lg:grid-cols-2">
               {familyMembers.map((number) => (
                 <article
                   key={number}
-                  className="overflow-hidden rounded-2xl border border-white bg-white shadow-[0_12px_30px_rgba(16,28,44,0.06)]"
+                  className="flex min-h-24 items-center gap-5 border-b border-stone-300 py-5 sm:gap-7"
                 >
-                  <div
-                    role="img"
-                    aria-label={`Headshot placeholder for family member ${number}`}
-                    className="flex aspect-[4/4.5] items-center justify-center bg-[#d7e0e8] text-[#314c68]"
+                  <span className="font-serif text-2xl italic text-[#8b744b]">{number}</span>
+                  <span
+                    aria-hidden="true"
+                    className="flex size-11 shrink-0 items-center justify-center rounded-full bg-[#d7e0e8] text-[#314c68]"
                   >
-                    <UserRound aria-hidden="true" size={48} strokeWidth={1} />
-                  </div>
-                  <div className="p-4 sm:p-5">
-                    <h3 className="font-serif text-lg tracking-tight text-stone-950">
+                    <UserRound size={22} strokeWidth={1.25} />
+                  </span>
+                  <div>
+                    <h3 className="font-serif text-xl tracking-tight text-stone-950">
                       Family member {number}
                     </h3>
                     <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-amber-900">
@@ -122,27 +113,22 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="bg-[#101c2c]">
-          <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 sm:py-16">
-            <div className="flex flex-col gap-7 rounded-2xl border border-stone-200 bg-[#fcfdfd] px-6 py-8 shadow-[0_24px_70px_rgba(0,0,0,0.18)] sm:px-9 sm:py-10 md:flex-row md:items-center md:justify-between">
-              <div>
-                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
-                  Built for partnership
-                </p>
-                <h2 className="mt-4 font-serif text-3xl tracking-tight text-stone-950 sm:text-4xl">
-                  Start a thoughtful conversation.
-                </h2>
-                <p className="mt-3 max-w-xl text-sm leading-6 text-stone-600">
-                  Connect with us about Haley House Holdings and our shared approach.
-                </p>
-              </div>
-              <Link
-                href="/contact"
-                className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full bg-[#b49b6a] px-5 py-3.5 text-sm font-semibold text-[#101c2c] transition hover:bg-[#c8b994]"
-              >
-                Get in touch <ArrowRight aria-hidden="true" size={16} />
-              </Link>
+        <section className="bg-white">
+          <div className="mx-auto flex max-w-7xl flex-col gap-5 border-t border-stone-200 px-5 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-8 sm:py-14">
+            <div>
+              <p className="font-serif text-2xl tracking-tight text-stone-950">
+                Interested in a conversation?
+              </p>
+              <p className="mt-2 text-sm leading-6 text-stone-600">
+                Get in touch with Haley House Holdings.
+              </p>
             </div>
+            <Link
+              href="/contact"
+              className="inline-flex w-fit items-center gap-2 border-b border-[#b49b6a] pb-2 text-sm font-semibold text-stone-950 transition hover:text-amber-900"
+            >
+              Contact us <ArrowUpRight aria-hidden="true" size={16} />
+            </Link>
           </div>
         </section>
       </main>
