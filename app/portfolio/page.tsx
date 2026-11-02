@@ -61,8 +61,8 @@ export default function PortfolioPage() {
           <figure className="grid grid-rows-[1fr_auto]">
             <div className="relative min-h-56 bg-stone-800 sm:min-h-72">
               <Image
-                src="/images/louisville-bridge.jpg"
-                alt="Downtown Louisville and the Ohio River in 1999, viewed from a bridge."
+                src="/images/louisville-night.jpg"
+                alt="Downtown Louisville skyline beneath the Milky Way, reflected in the Ohio River at night."
                 fill
                 loading="eager"
                 sizes="(max-width: 768px) 100vw, 55vw"
@@ -70,9 +70,9 @@ export default function PortfolioPage() {
               />
             </div>
             <PhotoCredit
-              creator="William Alden III"
-              title="Waterfront and downtown Louisville, 1999"
-              sourceUrl="https://commons.wikimedia.org/wiki/File:Waterfront_and_downtown_Louisville_Kentucky_USA_Ohio_River_mile_604_June_1999_file_99f102.jpg"
+              creator="Aroun Kesavaraj"
+              title="Downtown Louisville"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:Downtown_Louisville.jpg"
               className="bg-white px-4 py-2 text-[10px] leading-5 text-stone-500 sm:px-5"
             />
           </figure>
@@ -84,7 +84,7 @@ export default function PortfolioPage() {
               Grounded in the places where we live and work.
             </h2>
             <p className="mt-3 text-sm leading-7 text-stone-600">
-              This Louisville waterfront photograph is illustrative; it does not represent a Haley House
+              This Louisville cityscape is illustrative; it does not represent a Haley House
               holding or investment.
             </p>
           </div>

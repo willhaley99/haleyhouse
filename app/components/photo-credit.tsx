@@ -2,6 +2,8 @@ type PhotoCreditProps = {
   creator: string;
   sourceUrl: string;
   title: string;
+  licenseName?: string;
+  licenseUrl?: string;
   className?: string;
 };
 
@@ -9,6 +11,8 @@ export default function PhotoCredit({
   creator,
   sourceUrl,
   title,
+  licenseName = "CC BY-SA 4.0",
+  licenseUrl = "https://creativecommons.org/licenses/by-sa/4.0/",
   className,
 }: PhotoCreditProps) {
   return (
@@ -19,12 +23,12 @@ export default function PhotoCredit({
       </a>
       {" · "}
       <a
-        href="https://creativecommons.org/licenses/by-sa/4.0/"
+        href={licenseUrl}
         target="_blank"
         rel="noreferrer"
         className="underline underline-offset-2"
       >
-        CC BY-SA 4.0
+        {licenseName}
       </a>
     </figcaption>
   );

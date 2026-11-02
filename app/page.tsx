@@ -22,123 +22,83 @@ const principles = [
   },
 ];
 
-const focusAreas = [
-  "Venture growth",
-  "Real assets",
-  "Strategic opportunities",
-];
-
 export default function HomePage() {
   return (
     <div className="min-h-screen overflow-hidden text-stone-900">
       <SiteNavigation currentPath="/" />
 
       <main>
-        <section className="mx-auto max-w-7xl px-5 pb-16 pt-12 sm:px-8 sm:pt-20 lg:pb-24 lg:pt-24">
-          <div className="grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
-            <div className="relative z-10">
-              <p className="mb-7 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
-                <span className="h-px w-9 bg-amber-800/60" />
-                A Louisville family investment collective
-              </p>
-              <h1 className="max-w-3xl font-serif text-[clamp(3.5rem,6.8vw,6rem)] leading-[0.98] tracking-[-0.05em] text-stone-950">
-                Capital with
-                <br />
-                <span className="font-normal italic text-amber-900">a longer view.</span>
-              </h1>
-              <p className="mt-8 max-w-xl text-base leading-8 text-stone-600 sm:text-lg">
-                We take a patient, practical view of opportunity—looking for sound fundamentals, thoughtful
-                partners, and potential that can stand the test of time.
-              </p>
-              <div className="mt-9 flex flex-wrap items-center gap-4">
-                <Link
-                  href="/portfolio"
-                  className="group inline-flex items-center gap-3 rounded-full bg-stone-950 px-6 py-3.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(28,22,18,0.12)] transition hover:bg-amber-900"
+        <section aria-labelledby="home-hero-title">
+          <figure className="relative isolate flex min-h-[min(760px,calc(100svh-5.5rem))] items-center overflow-hidden bg-[#101c2c]">
+            <Image
+              src="/images/louisville-skyline-2021.jpg"
+              alt="Downtown Louisville skyline across the Ohio River, photographed in 2021."
+              fill
+              loading="eager"
+              sizes="100vw"
+              className="object-cover object-[58%_center] saturate-[.78] sm:object-center"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-gradient-to-r from-[#101c2c]/95 via-[#101c2c]/72 to-[#101c2c]/20"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-gradient-to-t from-[#101c2c]/65 via-transparent to-[#101c2c]/15"
+            />
+            <div className="relative mx-auto flex w-full max-w-7xl items-center px-5 py-24 sm:px-8 sm:py-28">
+              <div className="max-w-5xl">
+                <p className="mb-7 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-200">
+                  <span className="h-px w-9 bg-amber-200/70" />
+                  A Louisville family investment collective
+                </p>
+                <h1
+                  id="home-hero-title"
+                  className="font-serif text-[clamp(3.25rem,8vw,7.5rem)] leading-[0.94] tracking-[-0.05em] text-white"
                 >
-                  Explore our focus
-                  <ArrowRight aria-hidden="true" size={16} className="transition-transform group-hover:translate-x-1" />
-                </Link>
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 px-3 py-3 text-sm font-semibold text-stone-700 transition hover:text-amber-900"
-                >
-                  Get to know us <ArrowUpRight aria-hidden="true" size={15} />
-                </Link>
-              </div>
-              <a
-                href="#approach"
-                className="mt-16 hidden items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-stone-500 transition hover:text-stone-900 lg:inline-flex"
-              >
-                <span className="flex size-8 items-center justify-center rounded-full border border-stone-300">
-                  <ArrowDown aria-hidden="true" size={13} />
-                </span>
-                Discover our approach
-              </a>
-            </div>
-
-            <figure className="mx-auto w-full max-w-xl lg:ml-auto">
-              <div className="relative overflow-hidden rounded-xl border border-[#2b4058] bg-[#1c2e45] p-7 text-white shadow-[0_20px_55px_rgba(25,42,62,0.14)] sm:p-10">
-                <Image
-                  src="/images/louisville-waterfront.jpg"
-                  alt="The Delta Queen steamboat on the Ohio River in 2005, with downtown Louisville in the background."
-                  fill
-                  loading="eager"
-                  sizes="(max-width: 1024px) 90vw, 42vw"
-                  className="object-cover object-center opacity-55 saturate-[.72]"
-                />
-                <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-[#101c2c]/90 via-[#101c2c]/55 to-[#101c2c]/75" />
-                <div className="relative">
-                  <div className="flex items-start justify-between gap-5">
-                    <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-200/80">
-                        Our investment lens
-                      </p>
-                      <p className="mt-2 font-serif text-2xl tracking-tight sm:text-3xl">
-                        Intentional by nature.
-                      </p>
-                    </div>
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-sm border border-white/20 font-serif text-lg text-amber-100">
-                      H
-                    </span>
-                  </div>
-
-                  <div className="mt-9 border-t border-white/15">
-                    {focusAreas.map((area, index) => (
-                      <div
-                        key={area}
-                        className="flex items-center border-b border-white/15 py-5"
-                      >
-                        <div className="flex items-center gap-4">
-                          <span className="w-7 font-mono text-[10px] text-amber-200/65">
-                            0{index + 1}
-                          </span>
-                          <span className="text-sm font-medium tracking-wide text-stone-100 sm:text-base">
-                            {area}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-8 flex items-end justify-between gap-5">
-                    <p className="max-w-xs text-xs leading-6 text-stone-300">
-                      A disciplined approach to shared capital and lasting opportunity.
-                    </p>
-                    <span className="font-serif text-4xl leading-none text-amber-100/20">HH</span>
-                  </div>
+                  Capital with
+                  <br />
+                  <span className="font-normal italic text-amber-200">a longer view.</span>
+                </h1>
+                <p className="mt-7 max-w-2xl text-base leading-8 text-white/85 sm:text-lg sm:leading-9">
+                  We take a patient, practical view of opportunity—looking for sound fundamentals, thoughtful
+                  partners, and potential that can stand the test of time.
+                </p>
+                <div className="mt-8 flex flex-wrap items-center gap-4">
+                  <Link
+                    href="/portfolio"
+                    className="group inline-flex items-center gap-3 rounded-full bg-[#f3f5f7] px-6 py-3.5 text-sm font-semibold text-[#101c2c] shadow-[0_8px_24px_rgba(16,28,44,0.2)] transition hover:bg-amber-100"
+                  >
+                    Explore our focus
+                    <ArrowRight aria-hidden="true" size={16} className="transition-transform group-hover:translate-x-1" />
+                  </Link>
+                  <Link
+                    href="/about"
+                    className="inline-flex items-center gap-2 px-3 py-3 text-sm font-semibold text-white transition hover:text-amber-200"
+                  >
+                    Get to know us <ArrowUpRight aria-hidden="true" size={15} />
+                  </Link>
                 </div>
+                <a
+                  href="#approach"
+                  className="mt-12 inline-flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-white/75 transition hover:text-white"
+                >
+                  <span className="flex size-8 items-center justify-center rounded-full border border-white/45">
+                    <ArrowDown aria-hidden="true" size={13} />
+                  </span>
+                  Discover our approach
+                </a>
               </div>
-              <PhotoCredit
-                creator="William Alden"
-                title="Steamboat Delta Queen and downtown buildings, Louisville, 2005"
-                sourceUrl="https://commons.wikimedia.org/wiki/File:Steamboat_Delta_Queen_and_downtown_buildings_Louisville_Kentucky_USA_Ohio_River_mile_604_July_2005_file_a5g004.jpg"
-                className="mt-3 text-[10px] leading-5 text-stone-500"
-              />
-              <p className="mt-2 text-right text-[10px] font-medium uppercase tracking-[0.18em] text-stone-500">
-                Independent thinking. Shared conviction.
-              </p>
-            </figure>
-          </div>
+            </div>
+            <PhotoCredit
+              creator="Charles Delano, U.S. Army Corps of Engineers Louisville District"
+              title="Louisville Skyline 2021"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:Louisville_Skyline_2021_(3).jpg"
+              licenseName="CC BY 2.0"
+              licenseUrl="https://creativecommons.org/licenses/by/2.0/"
+              className="absolute bottom-3 right-5 z-10 max-w-[calc(100%-2.5rem)] text-right text-[10px] leading-5 text-white/75 sm:bottom-5 sm:right-8"
+            />
+          </figure>
         </section>
 
         <section id="approach" className="border-y border-stone-200 bg-[#e9edf1]">
