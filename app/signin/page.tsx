@@ -9,11 +9,17 @@ export const metadata: Metadata = {
 export default function SignInPage() {
   return (
     <main className="flex min-h-screen items-center justify-center px-6 py-16">
-      <section className="w-full max-w-md rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm md:p-10">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-800">
+      <section className="w-full max-w-md border border-stone-200 bg-[#fcfdfd] p-8 sm:p-10">
+        <Link href="/" className="mb-9 inline-flex items-center gap-3 text-sm font-semibold tracking-wide text-stone-900">
+          <span aria-hidden="true" className="flex size-9 items-center justify-center rounded-sm bg-[#1c2e45] font-serif text-lg text-[#f3f5f7]">
+            H
+          </span>
+          Haley House Holdings
+        </Link>
+        <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
           Member portal
         </p>
-        <h1 className="mt-4 text-3xl font-semibold tracking-tight text-stone-950">
+        <h1 className="mt-4 font-serif text-3xl tracking-tight text-stone-950">
           Enter your email address
         </h1>
         <div className="mt-8">

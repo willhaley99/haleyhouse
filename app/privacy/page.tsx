@@ -51,11 +51,11 @@ export default function PrivacyPage() {
     <>
       <SiteNavigation />
       <main className="mx-auto max-w-4xl px-6 py-16">
-        <article className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm md:p-12">
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-800">
+        <article className="border border-stone-200 bg-[#fcfdfd] p-7 sm:p-10 md:p-12">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
             Haley House Holdings
           </p>
-          <h1 className="mt-4 font-serif text-4xl tracking-tight text-stone-950 md:text-5xl">
+          <h1 className="mt-4 font-serif text-4xl tracking-tight text-stone-950 md:text-6xl">
             Privacy policy
           </h1>
           <p className="mt-4 text-sm text-stone-500">Last updated November 1, 2026</p>

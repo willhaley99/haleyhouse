@@ -11,8 +11,8 @@ export default function ProfilePage() {
     <>
       <MemberNavigation />
       <main className="mx-auto max-w-3xl px-6 py-16">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-800">Member portal</p>
-        <h1 className="mt-3 text-4xl font-semibold tracking-tight text-stone-950">Your profile</h1>
+      <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">Member portal</p>
+      <h1 className="mt-3 font-serif text-4xl tracking-tight text-stone-950">Your profile</h1>
         <ProfileDetails />
       </main>
     </>

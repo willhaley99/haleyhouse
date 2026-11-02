@@ -81,7 +81,7 @@ export default function ProfileDetails() {
       <section
         aria-label="Google account profile"
         aria-live="polite"
-        className="mt-8 rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm md:p-10"
+        className="mt-8 border border-stone-200 bg-[#fcfdfd] p-7 sm:p-9"
       >
         <p className="text-stone-600">Loading your account details…</p>
       </section>
@@ -92,7 +92,7 @@ export default function ProfileDetails() {
     return (
       <section
         aria-label="Google account profile"
-        className="mt-8 rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm md:p-10"
+        className="mt-8 border border-stone-200 bg-[#fcfdfd] p-7 sm:p-9"
       >
         <p role="alert" className="text-stone-700">
           We couldn’t load your account details.
@@ -100,7 +100,7 @@ export default function ProfileDetails() {
         <button
           type="button"
           onClick={() => void retryLoadingSession()}
-          className="mt-4 rounded-full bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-stone-700"
+          className="mt-4 rounded-sm bg-stone-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-amber-900"
         >
           Try again
         </button>
@@ -119,7 +119,7 @@ export default function ProfileDetails() {
   return (
     <section
       aria-label="Google account profile"
-      className="mt-8 rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm md:p-10"
+      className="mt-8 border border-stone-200 bg-[#fcfdfd] p-7 sm:p-9"
     >
       <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center">
         {session.user.image ? (

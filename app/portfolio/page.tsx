@@ -19,23 +19,23 @@ export default function PortfolioPage() {
   return (
     <>
       <SiteNavigation currentPath="/portfolio" />
-      <main className="mx-auto max-w-5xl px-6 py-16">
+      <main className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+        <section className="max-w-4xl border-b border-stone-300 pb-12 sm:pb-16">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">Portfolio focus</p>
+          <h1 className="mt-5 max-w-3xl font-serif text-4xl leading-[1.05] tracking-tight text-stone-950 sm:text-6xl">
+            A disciplined mix across growth and stewardship.
+          </h1>
+        </section>
 
-      <section className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm md:p-10">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-800">Portfolio focus</p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-stone-950 md:text-5xl">
-          A disciplined mix across growth and stewardship.
-        </h1>
-      </section>
-
-      <section className="mt-10 grid gap-6 md:grid-cols-3">
-        {verticals.map((vertical) => (
-          <article key={vertical.title} className="rounded-3xl border border-stone-200 bg-white p-6 shadow-sm">
-            <h2 className="text-xl font-semibold text-stone-900">{vertical.title}</h2>
-            <p className="mt-4 text-base leading-7 text-stone-600">{vertical.text}</p>
-          </article>
-        ))}
-      </section>
+        <section className="mt-10 grid gap-x-10 md:grid-cols-3">
+          {verticals.map((vertical, index) => (
+            <article key={vertical.title} className="border-b border-stone-300 py-7 md:border-t md:py-8">
+              <p className="font-mono text-[10px] text-amber-900/70">0{index + 1}</p>
+              <h2 className="mt-5 font-serif text-2xl tracking-tight text-stone-900">{vertical.title}</h2>
+              <p className="mt-3 text-sm leading-7 text-stone-600">{vertical.text}</p>
+            </article>
+          ))}
+        </section>
       </main>
     </>
   );

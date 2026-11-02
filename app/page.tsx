@@ -32,14 +32,14 @@ export default function HomePage() {
       <SiteNavigation currentPath="/" />
 
       <main>
-        <section className="mx-auto max-w-7xl px-5 pb-20 pt-16 sm:px-8 sm:pt-24 lg:pb-28 lg:pt-28">
-          <div className="grid items-center gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
+        <section className="mx-auto max-w-7xl px-5 pb-16 pt-12 sm:px-8 sm:pt-20 lg:pb-24 lg:pt-24">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16">
             <div className="relative z-10">
-              <p className="mb-7 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-amber-900">
+              <p className="mb-7 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
                 <span className="h-px w-9 bg-amber-800/60" />
                 A family investment collective
               </p>
-              <h1 className="max-w-3xl font-serif text-[clamp(3.5rem,7.2vw,6.5rem)] leading-[0.96] tracking-[-0.055em] text-stone-950">
+              <h1 className="max-w-3xl font-serif text-[clamp(3.5rem,6.8vw,6rem)] leading-[0.98] tracking-[-0.05em] text-stone-950">
                 Capital with
                 <br />
                 <span className="font-normal italic text-amber-900">a longer view.</span>
@@ -74,58 +74,37 @@ export default function HomePage() {
               </a>
             </div>
 
-            <div className="relative mx-auto w-full max-w-xl lg:ml-auto">
-              <div
-                aria-hidden="true"
-                className="absolute -right-14 -top-14 size-56 rounded-full border border-amber-800/15 sm:-right-20 sm:-top-20 sm:size-72"
-              />
-              <div
-                aria-hidden="true"
-                className="absolute -bottom-12 -left-12 size-40 rounded-full border border-stone-300/70"
-              />
-              <div className="relative overflow-hidden rounded-[2rem] bg-[#2c3028] p-7 text-white shadow-[0_30px_90px_rgba(38,35,28,0.2)] sm:p-10">
-                <div
-                  aria-hidden="true"
-                  className="absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:44px_44px]"
-                />
-                <div
-                  aria-hidden="true"
-                  className="absolute -right-24 -top-20 size-72 rounded-full border border-amber-200/20"
-                />
-                <div
-                  aria-hidden="true"
-                  className="absolute -right-10 -top-6 size-44 rounded-full border border-amber-200/20"
-                />
-                <div className="relative">
-                  <div className="flex items-start justify-between gap-5">
-                    <div>
-                      <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-200/80">
-                        Our investment lens
-                      </p>
-                      <p className="mt-2 font-serif text-2xl tracking-tight sm:text-3xl">
+            <div className="mx-auto w-full max-w-xl lg:ml-auto">
+            <div className="relative overflow-hidden rounded-xl border border-[#2b4058] bg-[#1c2e45] p-7 text-white shadow-[0_20px_55px_rgba(25,42,62,0.14)] sm:p-10">
+              <div className="relative">
+                <div className="flex items-start justify-between gap-5">
+                  <div>
+                    <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-200/80">
+                      Our investment lens
+                    </p>
+                    <p className="mt-2 font-serif text-2xl tracking-tight sm:text-3xl">
                         Intentional by nature.
                       </p>
                     </div>
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-full border border-white/20 font-serif text-lg text-amber-100">
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-sm border border-white/20 font-serif text-lg text-amber-100">
                       H
                     </span>
                   </div>
 
-                  <div className="mt-12 border-t border-white/15">
+                  <div className="mt-9 border-t border-white/15">
                     {focusAreas.map((area, index) => (
                       <div
                         key={area}
-                        className="flex items-center justify-between border-b border-white/15 py-5"
+                        className="flex items-center border-b border-white/15 py-5"
                       >
                         <div className="flex items-center gap-4">
-                          <span className="font-mono text-[10px] text-amber-200/65">
+                          <span className="w-7 font-mono text-[10px] text-amber-200/65">
                             0{index + 1}
                           </span>
                           <span className="text-sm font-medium tracking-wide text-stone-100 sm:text-base">
                             {area}
                           </span>
                         </div>
-                        <ArrowUpRight aria-hidden="true" size={16} className="text-amber-200/70" />
                       </div>
                     ))}
                   </div>
@@ -134,18 +113,18 @@ export default function HomePage() {
                     <p className="max-w-xs text-xs leading-6 text-stone-300">
                       A disciplined approach to shared capital and lasting opportunity.
                     </p>
-                    <span className="font-serif text-5xl leading-none text-white/10 sm:text-6xl">HH</span>
+                    <span className="font-serif text-4xl leading-none text-amber-100/20">HH</span>
                   </div>
                 </div>
               </div>
-              <p className="relative mt-5 text-right text-[10px] font-medium uppercase tracking-[0.2em] text-stone-500">
+              <p className="mt-4 text-right text-[10px] font-medium uppercase tracking-[0.18em] text-stone-500">
                 Independent thinking. Shared conviction.
               </p>
             </div>
           </div>
         </section>
 
-        <section id="approach" className="border-y border-stone-200/80 bg-[#f2ede5]">
+        <section id="approach" className="border-y border-stone-200 bg-[#e9edf1]">
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
             <div className="grid gap-10 md:grid-cols-[0.7fr_1.3fr] md:gap-16">
               <div>
@@ -175,7 +154,7 @@ export default function HomePage() {
         </section>
 
         <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
-          <div className="flex flex-col gap-8 rounded-[2rem] border border-stone-200 bg-[#fffdf9] px-7 py-9 shadow-[0_16px_50px_rgba(54,39,26,0.05)] sm:px-12 sm:py-12 md:flex-row md:items-end md:justify-between">
+          <div className="flex flex-col gap-8 rounded-xl border border-stone-200 bg-[#fcfdfd] px-7 py-9 sm:px-10 sm:py-10 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-amber-900">
                 Built for partnership
