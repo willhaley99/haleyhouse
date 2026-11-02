@@ -25,19 +25,15 @@ export default function AboutPage() {
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">Our story</p>
             <h2 className="mt-4 max-w-sm font-serif text-3xl leading-tight tracking-tight text-stone-950 sm:text-4xl">
-              Experience in the room. A shared point of view.
+              Practical experience across different fields.
             </h2>
           </div>
-          <div className="space-y-5 text-base leading-8 text-stone-600">
+          <div className="text-base leading-8 text-stone-600">
             <p>
-              Our family’s experience spans accounting, real estate, property management, nonprofit work, and
-              information technology. Together, those backgrounds bring financial, operational, community, and
-              technical perspectives to the table.
-            </p>
-            <p>
-              We began pooling family resources so we could back ideas we believe may succeed and participate
-              in what those efforts create. Each opportunity still has to make sense on its own; experience can
-              inform a decision, but it does not remove uncertainty.
+              Across accounting, real estate, property management, nonprofit work, and information technology,
+              our family has developed practical experience with financial detail, property operations,
+              organizational stewardship, and technology. That range gives us useful questions to bring to a
+              conversation; it does not replace close examination of any particular business or asset.
             </p>
           </div>
         </section>
