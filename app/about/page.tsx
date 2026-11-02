@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, UserRound } from "lucide-react";
 import SiteNavigation from "@/app/components/site-navigation";
+
+const familyMembers = ["01", "02", "03", "04", "05"];
 
 const values = [
   {
@@ -36,9 +38,9 @@ export default function AboutPage() {
             A family collective, built around a longer view.
           </h1>
           <p className="mt-7 max-w-3xl text-base leading-8 text-stone-600 sm:text-lg">
-            Haley House Holdings is built around a simple principle: capital is strongest when it is shared,
-            guided by family values, and paired with disciplined vision. We bring people together to consider
-            opportunities with care, ask better questions, and make decisions with a clear sense of purpose.
+            Based in Louisville, Kentucky, Haley House Holdings began with a straightforward idea: bring family
+            resources together to pursue opportunities we believe may succeed, and share in the success we work
+            toward together.
           </p>
         </section>
 
@@ -51,18 +53,60 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 text-base leading-8 text-stone-600">
             <p>
-              Haley House Holdings is a family-run investment collective. The idea is straightforward:
-              bring a shared perspective to opportunities that merit time, discussion, and careful consideration.
+              We are a family-run investment collective shaped by the people, experience, and practical
+              perspectives within our family. Pooling resources lets us consider opportunities together—with
+              shared purpose, open discussion, and a long-term outlook.
             </p>
             <p>
-              We believe the quality of a decision depends on more than the headline potential. It also depends
-              on understanding the underlying business or asset, the people involved, the risks that could change
-              the outcome, and whether the opportunity fits the people considering it.
+              Our family’s experience and involvement spans accounting, real estate, property management,
+              nonprofit work, and information technology. These fields bring different ways of thinking about
+              financial fundamentals, physical assets, day-to-day operations, community, and the systems that
+              help organizations work.
             </p>
             <p>
-              Our aim is to build a durable approach to shared capital—one grounded in thoughtful judgment,
-              candid communication, and relationships that can support a long-term view.
+              We draw on those perspectives as we evaluate opportunities, while recognizing that every business,
+              asset, and investment has its own details and risks. We want to understand both the potential and
+              what could stand in its way before deciding whether it belongs in our shared effort.
             </p>
+            <p>
+              At its heart, Haley House Holdings is about building together: combining resources and judgment,
+              supporting opportunities we believe in, and sharing in the outcomes—good or difficult—that come
+              with investing.
+            </p>
+          </div>
+        </section>
+
+        <section className="border-b border-stone-300 py-12 sm:py-16">
+          <div className="max-w-2xl">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">The people behind Haley House</p>
+            <h2 className="mt-4 font-serif text-3xl tracking-tight text-stone-950 sm:text-4xl">
+              Family, working toward a shared vision.
+            </h2>
+            <p className="mt-4 text-sm leading-7 text-stone-600 sm:text-base">
+              Meet the family members behind our collective. Personal introductions and portraits will be added here.
+            </p>
+          </div>
+          <div className="mt-8 grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-3 lg:grid-cols-5 lg:gap-x-6">
+            {familyMembers.map((number) => (
+              <article key={number}>
+                <div
+                  role="img"
+                  aria-label={`Headshot placeholder for family member ${number}`}
+                  className="flex aspect-[4/5] items-center justify-center border border-stone-300 bg-[#e5ebf1] text-[#314c68]"
+                >
+                  <UserRound aria-hidden="true" size={52} strokeWidth={1} />
+                </div>
+                <h3 className="mt-4 font-serif text-lg tracking-tight text-stone-900">
+                  Family member {number}
+                </h3>
+                <p className="mt-1 text-xs font-medium uppercase tracking-[0.14em] text-amber-900">
+                  Title to come
+                </p>
+                <p className="mt-2 text-sm leading-6 text-stone-600">
+                  Short introduction to be added.
+                </p>
+              </article>
+            ))}
           </div>
         </section>
 
