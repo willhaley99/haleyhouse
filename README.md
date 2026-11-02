@@ -108,8 +108,10 @@ Open http://localhost:3000 to view the site.
 - Google Auth Platform branding points to `https://haleyhouse.vercel.app` and
   `https://haleyhouse.vercel.app/privacy`.
 - The current production domain is `https://haleyhouse.vercel.app`.
-  `haleyhouseholdings.com` has been added to the Vercel project; its GoDaddy
-  DNS records still need to point to Vercel before it can serve the site.
+  `haleyhouseholdings.com` and `www.haleyhouseholdings.com` have been added to
+  the Vercel project; their GoDaddy DNS records still need to point to Vercel
+  before they can serve the site. Use the exact A and CNAME values shown on
+  the domain cards in Vercel, and leave the registrar's nameservers unchanged.
 - The contact form opens a prefilled email in the visitor's email app; the
   visitor must send it. The site does not receive or store contact inquiries.
 
