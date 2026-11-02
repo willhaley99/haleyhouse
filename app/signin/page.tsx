@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import EmailSignInForm from "./email-sign-in-form";
 
 export const metadata: Metadata = {
@@ -18,6 +19,11 @@ export default function SignInPage() {
         <div className="mt-8">
           <EmailSignInForm />
         </div>
+        <p className="mt-6 text-center text-sm text-stone-500">
+          <Link href="/privacy" className="underline underline-offset-4 hover:text-stone-900">
+            Privacy policy
+          </Link>
+        </p>
       </section>
     </main>
   );
