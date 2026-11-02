@@ -1,18 +1,10 @@
-import Link from "next/link";
+import SiteNavigation from "@/app/components/site-navigation";
 
 export default function ContactPage() {
   return (
-    <main className="mx-auto max-w-4xl px-6 py-16">
-      <nav className="mb-10 flex items-center justify-between">
-        <Link href="/" className="text-lg font-semibold tracking-tight text-stone-900">
-          Haley House
-        </Link>
-        <div className="flex gap-5 text-sm font-medium text-stone-600">
-          <Link href="/about">About</Link>
-          <Link href="/portfolio">Portfolio</Link>
-          <Link href="/dashboard">Dashboard</Link>
-        </div>
-      </nav>
+    <>
+      <SiteNavigation />
+      <main className="mx-auto max-w-4xl px-6 py-16">
 
       <section className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm md:p-10">
         <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-800">Contact</p>
@@ -40,6 +32,7 @@ export default function ContactPage() {
           </button>
         </form>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

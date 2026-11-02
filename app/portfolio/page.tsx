@@ -1,4 +1,4 @@
-import Link from "next/link";
+import SiteNavigation from "@/app/components/site-navigation";
 
 const verticals = [
   {
@@ -17,17 +17,9 @@ const verticals = [
 
 export default function PortfolioPage() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-16">
-      <nav className="mb-10 flex items-center justify-between">
-        <Link href="/" className="text-lg font-semibold tracking-tight text-stone-900">
-          Haley House
-        </Link>
-        <div className="flex gap-5 text-sm font-medium text-stone-600">
-          <Link href="/about">About</Link>
-          <Link href="/dashboard">Dashboard</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
-      </nav>
+    <>
+      <SiteNavigation currentPath="/portfolio" />
+      <main className="mx-auto max-w-5xl px-6 py-16">
 
       <section className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm md:p-10">
         <p className="text-sm font-medium uppercase tracking-[0.2em] text-amber-800">Portfolio focus</p>
@@ -44,6 +36,7 @@ export default function PortfolioPage() {
           </article>
         ))}
       </section>
-    </main>
+      </main>
+    </>
   );
 }

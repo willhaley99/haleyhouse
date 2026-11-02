@@ -27,7 +27,7 @@ body {
     radial-gradient(circle at top, rgba(202, 165, 122, 0.18), transparent 30%),
     var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -44,4 +44,43 @@ a {
 
 a:hover {
   opacity: 0.92;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu-icon {
+  display: grid;
+  gap: 4px;
+}
+
+.menu-icon span {
+  width: 14px;
+  height: 1.5px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform 0.2s ease;
+}
+
+.group[open] .menu-icon span:first-child {
+  transform: translateY(2.75px) rotate(45deg);
+}
+
+.group[open] .menu-icon span:last-child {
+  transform: translateY(-2.75px) rotate(-45deg);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link[aria-current="page"]::after {
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  left: 0;
+  height: 1px;
+  background: var(--primary);
+  content: "";
 }
