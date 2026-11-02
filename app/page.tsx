@@ -135,8 +135,8 @@ export default function HomePage() {
           </figure>
         </section>
 
-        <section id="approach" className="relative isolate overflow-hidden border-y border-stone-200 bg-[#e9edf1]">
-          <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_82%_15%,rgba(180,155,106,0.12)_0%,rgba(233,237,241,0)_48%)]" />
+        <section id="approach" className="relative isolate overflow-hidden border-y border-stone-200 bg-white">
+          <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_82%_15%,rgba(180,155,106,0.1)_0%,rgba(255,255,255,0)_48%)]" />
           <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-20">
             <div className="relative grid gap-10 md:grid-cols-[0.7fr_1.3fr] md:gap-16">
               <div>
@@ -166,8 +166,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section aria-labelledby="areas-title" className="relative isolate overflow-hidden border-b border-stone-200 bg-[#f3f5f7]">
-          <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(180,155,106,0.09)_0%,rgba(243,245,247,0)_50%)]" />
+        <section aria-labelledby="areas-title" className="relative isolate overflow-hidden border-b border-stone-200 bg-[#e9edf1]">
+          <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(180,155,106,0.09)_0%,rgba(233,237,241,0)_50%)]" />
           <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 sm:py-24">
           <div className="mb-9 flex flex-col gap-4 border-b border-stone-300 pb-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
