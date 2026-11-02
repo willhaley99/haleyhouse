@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, UserRound } from "lucide-react";
 import SiteNavigation from "@/app/components/site-navigation";
+import PhotoCredit from "@/app/components/photo-credit";
 
 const familyMembers = ["01", "02", "03", "04", "05"];
 
@@ -20,6 +22,29 @@ export default function AboutPage() {
             toward together.
           </p>
         </section>
+
+        <figure className="relative mt-10 overflow-hidden rounded-sm border border-stone-300 bg-stone-800">
+          <div className="relative h-56 sm:h-72">
+            <Image
+              src="/images/louisville-riverfront.jpg"
+              alt="Downtown Louisville viewed from Waterfront Park in 1999, with the riverfront in the distance."
+              fill
+              loading="eager"
+              sizes="(max-width: 1152px) 100vw, 1152px"
+              className="object-cover object-center saturate-[.75]"
+            />
+            <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[#101c2c]/60 via-transparent to-transparent" />
+            <p className="absolute bottom-5 left-5 font-serif text-2xl text-white sm:bottom-7 sm:left-7 sm:text-3xl">
+              Louisville, Kentucky
+            </p>
+          </div>
+          <PhotoCredit
+            creator="William Alden"
+            title="View WSW from near Waterfront Park playground, 1999"
+            sourceUrl="https://commons.wikimedia.org/wiki/File:99E050_-_Looking_WSW_from_near_Waterfront_Park_playground_(near_foot_of_Preston_Street),_Louisville,_Kentucky,_Ohio_River_mile_603,_May_21,_1999_-_Flickr_-_Bill_Alden.jpg"
+            className="bg-white px-4 py-2 text-[10px] leading-5 text-stone-500 sm:px-5"
+          />
+        </figure>
 
         <section className="grid gap-8 border-b border-stone-300 py-12 sm:py-16 md:grid-cols-[0.7fr_1.3fr] md:gap-16">
           <div>

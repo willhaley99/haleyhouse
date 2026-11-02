@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   { href: "/about", label: "Our story" },
@@ -15,10 +16,9 @@ export default function SiteNavigation({ currentPath = "/" }: { currentPath?: st
       >
         <Link href="/" className="group flex shrink-0 items-center gap-3" aria-label="Haley House Holdings home">
           <span
-            aria-hidden="true"
-            className="flex size-10 items-center justify-center rounded-sm bg-[#1c2e45] font-serif text-lg text-[#f3f5f7] transition group-hover:bg-amber-900"
+            className="flex size-10 items-center justify-center overflow-hidden rounded-sm border border-stone-300 bg-white transition group-hover:border-amber-800"
           >
-            H
+            <Image src="/haley-house-mark.png" alt="" width={40} height={40} />
           </span>
           <span className="leading-tight">
             <span className="block text-sm font-semibold tracking-[0.04em] text-stone-950 sm:text-base">

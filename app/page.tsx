@@ -1,6 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 import SiteNavigation from "@/app/components/site-navigation";
+import PhotoCredit from "@/app/components/photo-credit";
 
 const principles = [
   {
@@ -74,15 +76,24 @@ export default function HomePage() {
               </a>
             </div>
 
-            <div className="mx-auto w-full max-w-xl lg:ml-auto">
-            <div className="relative overflow-hidden rounded-xl border border-[#2b4058] bg-[#1c2e45] p-7 text-white shadow-[0_20px_55px_rgba(25,42,62,0.14)] sm:p-10">
-              <div className="relative">
-                <div className="flex items-start justify-between gap-5">
-                  <div>
-                    <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-200/80">
-                      Our investment lens
-                    </p>
-                    <p className="mt-2 font-serif text-2xl tracking-tight sm:text-3xl">
+            <figure className="mx-auto w-full max-w-xl lg:ml-auto">
+              <div className="relative overflow-hidden rounded-xl border border-[#2b4058] bg-[#1c2e45] p-7 text-white shadow-[0_20px_55px_rgba(25,42,62,0.14)] sm:p-10">
+                <Image
+                  src="/images/louisville-waterfront.jpg"
+                  alt="The Delta Queen steamboat on the Ohio River in 2005, with downtown Louisville in the background."
+                  fill
+                  loading="eager"
+                  sizes="(max-width: 1024px) 90vw, 42vw"
+                  className="object-cover object-center opacity-55 saturate-[.72]"
+                />
+                <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-br from-[#101c2c]/90 via-[#101c2c]/55 to-[#101c2c]/75" />
+                <div className="relative">
+                  <div className="flex items-start justify-between gap-5">
+                    <div>
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-200/80">
+                        Our investment lens
+                      </p>
+                      <p className="mt-2 font-serif text-2xl tracking-tight sm:text-3xl">
                         Intentional by nature.
                       </p>
                     </div>
@@ -117,10 +128,16 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              <p className="mt-4 text-right text-[10px] font-medium uppercase tracking-[0.18em] text-stone-500">
+              <PhotoCredit
+                creator="William Alden"
+                title="Steamboat Delta Queen and downtown buildings, Louisville, 2005"
+                sourceUrl="https://commons.wikimedia.org/wiki/File:Steamboat_Delta_Queen_and_downtown_buildings_Louisville_Kentucky_USA_Ohio_River_mile_604_July_2005_file_a5g004.jpg"
+                className="mt-3 text-[10px] leading-5 text-stone-500"
+              />
+              <p className="mt-2 text-right text-[10px] font-medium uppercase tracking-[0.18em] text-stone-500">
                 Independent thinking. Shared conviction.
               </p>
-            </div>
+            </figure>
           </div>
         </section>
 

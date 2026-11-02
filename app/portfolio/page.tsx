@@ -1,6 +1,8 @@
 import SiteNavigation from "@/app/components/site-navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import PhotoCredit from "@/app/components/photo-credit";
 
 const verticals = [
   {
@@ -53,6 +55,39 @@ export default function PortfolioPage() {
             matters most is the strength of the underlying case, the people involved, and whether the terms
             and time horizon make sense.
           </p>
+        </section>
+
+        <section className="mt-10 grid overflow-hidden border border-stone-300 bg-white md:grid-cols-[1.1fr_0.9fr]">
+          <figure className="grid grid-rows-[1fr_auto]">
+            <div className="relative min-h-56 bg-stone-800 sm:min-h-72">
+              <Image
+                src="/images/louisville-bridge.jpg"
+                alt="Downtown Louisville and the Ohio River in 1999, viewed from a bridge."
+                fill
+                loading="eager"
+                sizes="(max-width: 768px) 100vw, 55vw"
+                className="object-cover object-center saturate-[.75]"
+              />
+            </div>
+            <PhotoCredit
+              creator="William Alden III"
+              title="Waterfront and downtown Louisville, 1999"
+              sourceUrl="https://commons.wikimedia.org/wiki/File:Waterfront_and_downtown_Louisville_Kentucky_USA_Ohio_River_mile_604_June_1999_file_99f102.jpg"
+              className="bg-white px-4 py-2 text-[10px] leading-5 text-stone-500 sm:px-5"
+            />
+          </figure>
+          <div className="flex flex-col justify-center px-6 py-7 sm:px-9 sm:py-10">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-900">
+              A view of our home city
+            </p>
+            <h2 className="mt-3 font-serif text-2xl leading-tight tracking-tight text-stone-950 sm:text-3xl">
+              Grounded in the places where we live and work.
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-stone-600">
+              This Louisville waterfront photograph is illustrative; it does not represent a Haley House
+              holding or investment.
+            </p>
+          </div>
         </section>
 
         <section className="mt-10 grid gap-x-10 md:grid-cols-3">
